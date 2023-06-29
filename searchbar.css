@@ -1,7 +1,7 @@
 /* Search button start */
 .search-bar-container {
     width:100%;
-    max-height:50px;
+    max-height:25px;
     padding: 16px;
     display:flex;
     align-items: center;
@@ -41,8 +41,8 @@
   .search-bar button{
   border:0;
   border-radius:50%;
-  width:65px;
-  height:60px;
+  width:30px;
+  height:30px;
   background:#d3d4d7;
   cursor: pointer;
   }
