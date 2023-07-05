@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100em;
+    height: 420px;
+    background-size: cover;
+    text-align: center;
+    /* margin-left: 40px; */
+    margin-left: 2.5em;
+}
+.blurred-box{
+    background-image: url(/group7-main/img/blurbox.jpg);
+    /* border: 2px red solid; */
+    margin-left: 3.6em;
+    margin-right: 1em;
+}
+
+.home {
+    width: 105em;
+    height: 510px;
+    text-align: center;
+    justify-items: center;
+}
+
+.home .content h1{
+    color: rgb(82, 33, 33);
+    font-size: 40px;
+    font-weight: 1000;
+    text-shadow: 3px 10px 10px rgb(163, 109, 109);
+    text-align: center;
+    margin-top: 5px;
+    padding-top: 1px;
+}
+.home .content p{
+    font-size: 20px;
+    font-weight: 1000;
+    text-shadow: 3px 3px 3px rgb(163, 109, 109);
+}
+
+
+
+/* box cover Krabi and activities*/
+.container{
+    position: relative;
+    min-height: 100vh;
+}
+.container bg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.bg::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/group7-main/img/naturebg.jpg);
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(45%);
+}
+.menu{
+    position: relative;
+    width: 85%;
+    height: 15vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu h2{
+    font-weight: bold;
+    color: #fff;
+    font-size: 60px;
+    margin-top: 100px;
+}
+
+
+/* div box */
+.text{
+    width: 85%;
+    margin: 0 auto;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+.text .Krabi,.grid-card{
+    width: 50%;
+    position: relative;
+}
+.text .Krabi{
+    color: #fff;
+}
+.text .Krabi h3{
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+}
+.text .Krabi h2 i{
+    color: orange;
+}
+.text .Krabi h2{
+    font-size: 4rem;
+}
+.text .Krabi p{
+    opacity: .6;
+}
+
+
+
+/* card */
+.grid-card{
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 40px;
+}
+.grid-card .box{
+    width: 100%;
+    height: 300px;
+    /* background: red; */
+    background-position: center;
+    background-size: cover;
+}
+
+.bg1{
+    background-image: url(/group7-main/img/climbing.jpg);
+
+}
+
