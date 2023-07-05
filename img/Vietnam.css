@@ -1,0 +1,182 @@
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  header nav ul {
+    list-style: none;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  /* body section start */
+
+ .Intro-Header > div {
+font-size: 50px;
+font-family: Arial, sans-serif;
+line-height:1.5;
+ } 
+ .photos{
+    display:flex;
+    
+ 
+    
+ }
+#photo1,
+#photo2 {
+    width: 40%;
+    height: 40%;
+    margin:40px;
+   
+   
+
+}
+
+
+.video-container {
+  padding-top: 60px;
+  /*
+
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+/* .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+*/
+.embed {
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+  width: 100%;
+}
+
+.embed-16-9 {
+  padding-top: 56.25%;
+}
+
+.embed-item {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.intro{
+background: linear-gradient(rgba(0,0,0,0.5),#94e8df), url(img/Vietnam9.jpg);
+background-size:cover;
+background-position: center;
+height: 100vh;
+}
+
+.intro-text{
+  color:#fff;
+  padding-top:260px;
+  text-align: center;
+ position: absolute;
+  width: 700px;
+  left:32%;
+  font-size: 28px;
+  font-family: italic;
+  text-shadow: #333 10px;
+  
+  
+}
+/* Map section start */
+.map-container iframe{
+  width: 15%;
+}
+.map-container h3{
+  font-size: 20px;
+  font-family: PT Serif;
+
+}
+/* Map section end */
+
+
+/* Vietnam at a glance start*/
+.glance{
+padding-top: 40px;
+
+
+}
+.glance caption{
+  font-size:30px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.glance table, th, td{
+  background-color: rgb(154, 198, 240);
+  padding: 20px;
+}
+.glance table td{
+  text-align: center;
+}
+/* Vietnam at a glance end*/
+
+/*Weather forecast start*/
+.weatherforecast h1{
+font-size:20px;
+}
+/*Weather forecast end*/
+
+/*Places section start*/
+
+.places-container div{
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 6px;
+  row-gap: 35px;
+
+}
+.places-container div img{
+  width:340px;
+  height:200px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.places-container div h4{
+  position: absolute;
+  top:70%;
+  bottom: 20%;
+  right:50%;
+
+}
+/*Places section end*/
+
+  footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  footer nav ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
