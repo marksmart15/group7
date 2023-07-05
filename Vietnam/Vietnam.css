@@ -1,7 +1,13 @@
 body{
-
+margin:0;
+padding:0;
+}
+.container{
+width: 100%;
+height: 100vh;
 }
 header {
+
 
  
     background-color: #333;
@@ -105,12 +111,15 @@ height: 100vh;
 }
 /* Map section start */
 .map-container iframe{
-  width: 15%;
+  width: 250px;
 }
 .map-container h3{
   font-size: 20px;
   font-family: PT Serif;
 
+}
+.map-container{
+  margin-left: 20px;
 }
 /* Map section end */
 
@@ -118,7 +127,7 @@ height: 100vh;
 /* Vietnam at a glance start*/
 .glance{
 padding-top: 40px;
-
+margin-right: 20px;
 
 }
 .glance caption{
@@ -135,7 +144,10 @@ padding-top: 40px;
   text-align: center;
 }
 /* Vietnam at a glance end*/
-
+.map-glance-container{
+  display: flex;
+justify-content: space-between;
+}
 /*Weather forecast start*/
 .weatherforecast h1{
 font-size:20px;
@@ -162,7 +174,7 @@ font-size:20px;
 
 .places-container div h4{
   position: absolute;
-
+color: #fff;
 
 }
 #photo{
@@ -175,6 +187,7 @@ font-size:20px;
 
 /*Food tours section start*/
 .food-tours{
+  margin:20px;
   display: flex;
   flex-direction: column;
 }
