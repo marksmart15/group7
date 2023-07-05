@@ -1,5 +1,9 @@
+body{
 
+}
 header {
+
+ 
     background-color: #333;
     color: #fff;
     padding: 20px;
@@ -146,23 +150,42 @@ font-size:20px;
   flex-wrap: wrap;
   column-gap: 6px;
   row-gap: 35px;
+  flex-direction: row;
 
 }
 .places-container div img{
   width:340px;
-  height:200px;
+  height:250px;
   border-radius: 10px;
   cursor: pointer;
 }
 
 .places-container div h4{
   position: absolute;
-  top:70%;
-  bottom: 20%;
-  right:50%;
+
 
 }
+#photo{
+  display:flex;
+  flex-direction: column;
+  
+}
+
 /*Places section end*/
+
+/*Food tours section start*/
+.food-tours{
+  display: flex;
+  flex-direction: column;
+}
+.food-tours img{
+  
+  width:230px;
+  height:260px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/*Food tours section end*/
 
   footer {
     background-color: #f4f4f4;
@@ -180,7 +203,6 @@ font-size:20px;
     text-decoration: none;
   }
 
-/*Subscribe section start*/
   footer button{
     border-radius: 40px;
     background-color: #fff;
@@ -191,5 +213,17 @@ font-size:20px;
     transition: 0.5s;
 
   }
+  .footer-link{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer-link a{
+    text-decoration: none;
+    color: orangered;
+    font-size: 15px;
+    font-weight: bold;
+
+  }
   
-/*Subscribe section end*/
