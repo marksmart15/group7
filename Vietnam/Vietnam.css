@@ -179,4 +179,17 @@ font-size:20px;
     color: #333;
     text-decoration: none;
   }
+
+/*Subscribe section start*/
+  footer button{
+    border-radius: 40px;
+    background-color: #fff;
+  }
+
+  footer button:hover{
+    letter-spacing: 2px;
+    transition: 0.5s;
+
+  }
   
+/*Subscribe section end*/
