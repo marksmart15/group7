@@ -12,7 +12,7 @@ img{
     margin-left: 2.5em;
 }
 .blurred-box{
-    background-image: url(/img/blurbox.jpg);
+    background-image: url(/group7-main/Thailand/img/blurbox.jpg);
     /* border: 2px red solid; */
     margin-left: 3.6em;
     margin-right: 1em;
@@ -59,7 +59,7 @@ img{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/img/naturebg.jpg);
+    background-image: url(/group7-main/Thailand/img/naturebg.jpg);
     z-index: -1;
     background-size: cover;
     background-position: center;
@@ -130,6 +130,6 @@ img{
 }
 
 .bg1{
-    background-image: url(/img/climbing.jpg);
+    background-image: url(/group7-main/Thailand/img/climbing.jpg);
 
 }
