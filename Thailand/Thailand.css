@@ -1,135 +1,363 @@
 *{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-img{
-    width: 100em;
-    height: 420px;
-    background-size: cover;
-    text-align: center;
-    /* margin-left: 40px; */
-    margin-left: 2.5em;
-}
-.blurred-box{
-    background-image: url(/group7-main/Thailand/img/blurbox.jpg);
-    /* border: 2px red solid; */
-    margin-left: 3.6em;
-    margin-right: 1em;
+    border: 0;
 }
 
-.home {
-    width: 105em;
-    height: 510px;
+  
+  header {
+    background-color: #333;
+    /* background-image: url(img/airplane.jpg);
+    background-position: center;
+    background-size: 100%; */
+    color: white;
+    padding: 10px;
+    height: 13vh;
+  }
+  
+  header nav ul {
+    list-style: none;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  header nav ul li a {
+    
+    color: white;
+    text-decoration: none;
+  }
+  .navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 17px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #4f4f4f;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* VDO */
+.video{
+    background-color: #377b94;
+}
+#myVideo {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    z-index: -100;
+  }
+  audio::-webkit-media-controls-timeline,
+  video::-webkit-media-controls-timeline {
+      display: none;
+  }
+  audio::-webkit-media-controls,
+  video::-webkit-media-controls {
+      display: none;
+  }
+/* End VDO */
+
+
+/* Welcome to Thailand */
+  .blurred-box{
+    background-image: url(/group7-main/Thailand/img/blurbox.jpg);
+    /* border: 2px red solid; */
+    width: 100%;
+    height: 100px;
     text-align: center;
     justify-items: center;
 }
 
-.home .content h1{
+.Welcome h1{
     color: rgb(82, 33, 33);
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 1000;
     text-shadow: 3px 10px 10px rgb(163, 109, 109);
     text-align: center;
     margin-top: 5px;
-    padding-top: 1px;
+    padding: 5px;
 }
-.home .content p{
+.Welcome p{
+    /* border: 2px red solid; */
     font-size: 20px;
     font-weight: 1000;
     text-shadow: 3px 3px 3px rgb(163, 109, 109);
+    text-align: center;
+    color: #333;
 }
+/* End welcome Thaoland */
 
 
 
-/* box cover Krabi and activities*/
-.container{
-    position: relative;
-    min-height: 100vh;
+/* contain */
+.contain{
+    margin: 0 auto;
+    height: 30%;
+    text-align: center;
+    justify-items: center;
+    max-width: 75%;
+    /* border: 2px red solid; */
 }
-.container bg{
+.content{
+    margin: 1em;
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 1em;
+}
+.content_left{
+    width: 90%;
+}
+.content_right{
+    /* border: 2px red solid; */
+    padding: 0.5em 0;
     width: 100%;
-    height: 100%;
-    position: relative;
+    color: #333;
+    text-align: left;
+    justify-content: center;
 }
-.bg::after{
+.content_right h1{
+    margin-bottom: .5em;
+}
+.content_right p{
+    margin-bottom: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #4f4f4f;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 20px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    /* border: 1px solid #ccc; */
+    border-top: none;
+  }
+  
+  /* Style the close button */
+  .topright {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+  }
+  .topright:hover {color: red;}
+  
+
+
+
+
+
+
+  /* container & background */
+  .container {
+    min-height: 120vh;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .bg {
+    position: relative;
+    width: 100%;
+    height: 40%;
+  }
+  .bg::after {
     content: "";
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/group7-main/Thailand/img/naturebg.jpg);
-    z-index: -1;
-    background-size: cover;
-    background-position: center;
-    filter: brightness(45%);
-}
-.menu{
-    position: relative;
-    width: 85%;
-    height: 15vh;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.menu h2{
-    font-weight: bold;
-    color: #fff;
-    font-size: 60px;
-    margin-top: 100px;
-}
-
-
-/* div box */
-.text{
-    width: 85%;
-    margin: 0 auto;
     position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    z-index: -1;
+    filter: brightness(45%);
+    background-image: url("/group7-main/Thailand/img/bg1.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+ 
+
+
+
+
+
+
+
+
+  .box {
     display: flex;
-}
-.text .Krabi,.grid-card{
-    width: 50%;
-    position: relative;
-}
-.text .Krabi{
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+  }
+  .Krabi {
+    border: 2px red solid;
     color: #fff;
-}
-.text .Krabi h3{
-    font-size: 2.3rem;
-    letter-spacing: 2px;
-}
-.text .Krabi h2 i{
-    color: orange;
-}
-.text .Krabi h2{
-    font-size: 4rem;
-}
-.text .Krabi p{
-    opacity: .6;
-}
-
-
-
-/* card */
-.grid-card{
+    padding: 80px;
+  }
+  .card {
+    border: 2px red solid;
     display: grid;
-    grid-template-rows: auto auto;
-    gap: 40px;
-}
-.grid-card .box{
-    width: 100%;
-    height: 300px;
-    /* background: red; */
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+  }
+  .card h2 {
+    color: #fff;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+  .card .box1,.box2,.box3,.box4 {
+    width: 90%;
+    height: 400px;
     background-position: center;
     background-size: cover;
-}
+    position: relative;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  .box1 {
+    background-image: url("/group7-main/Thailand/img/phiphi.jpg");
+  }
+  .box2 {
+    background-image: url("/group7-main/Thailand/img/climbing.jpg");
+  }
+  .box3 {
+    background-image: url("https://images.unsplash.com/photo-1556609894-0ae309cb8354?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80");
+  }
+  .box4 {
+    background-image: url("https://images.unsplash.com/photo-1601225612316-b4733315a717?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+  }
+  .Krabi h2 {
+    font-size: 2rem;
+    letter-spacing: 2.8px;
+  }
+  .text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .txt h1 {
+    font-size: 7rem;
+  }
+  .Krabi p {
+    opacity: 0.4;
+  }
+  .tnx h2 i {
+    color: #fd7e13;
+  }
+  .card div {
+    transition: 0.5s;
+  }
+  .card div:hover {
+    transition: 0.3s;
+    transform: translateY(-10px);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  }
 
-.bg1{
-    background-image: url(/group7-main/Thailand/img/climbing.jpg);
 
-}
+
+
+
+
+
+
+
+
