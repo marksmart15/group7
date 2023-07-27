@@ -61,7 +61,6 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   
   footer nav ul li a {
     color: #333;
-    text-decoration: none;
   }
   
   h3 {
@@ -185,3 +184,7 @@ video::-webkit-media-controls {
     display: none;
 }
 
+.footer-link a{
+  margin: 10px;
+  color: white;
+}
