@@ -79,7 +79,7 @@ line-height:1.5;
 }
 */
 .embed {
- margin-top: 50px;
+ margin-top: 170px;
   margin-left: 0;
   margin-right: 0;
   position: relative;
@@ -206,6 +206,17 @@ color: #fff;
   height:260px;
   border-radius: 10px;
   cursor: pointer;
+}
+.food-tours #myBtn {
+  width: 7rem;
+  border: none;
+  color: rgb(33, 179, 33);
+  font-weight: bold;
+  background-color: none;
+}
+
+.food-tours #myBtn:hover {
+  color: lightgreen;
 }
 /*Food tours section end*/
 
