@@ -188,3 +188,15 @@ video::-webkit-media-controls {
   margin: 10px;
   color: white;
 }
+
+#Canada{
+  display: none;
+}
+
+#Falls{
+  display: none;
+}
+
+#Ottawa{
+  display: none;
+}
