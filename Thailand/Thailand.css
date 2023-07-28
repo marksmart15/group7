@@ -117,7 +117,7 @@
 
 /* Welcome to Thailand */
   .blurred-box{
-    background-image: url(/group7-main/Thailand/img/blurbox.jpg);
+    background-image: url(/Thailand/img/blurbox.jpg);
     /* border: 2px red solid; */
     width: 100%;
     height: 100px;
@@ -189,7 +189,7 @@
 
 
 
-/* Style the tab */
+            /* Style the tab */
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
@@ -233,6 +233,7 @@
     font-size: 28px;
   }
   .topright:hover {color: red;}
+              /* End Style tab */
   
 
 
@@ -261,11 +262,11 @@
     position: absolute;
     z-index: -1;
     filter: brightness(45%);
-    background-image: url("/group7-main/Thailand/img/bg1.jpg");
+    background-image: url("/Thailand/img/bg1.jpg");
     background-size: cover;
     background-position: center;
   }
- 
+ /* end container & background */
 
 
 
@@ -273,7 +274,7 @@
 
 
 
-
+/* box, card & Krabi */
   .box {
     display: flex;
     justify-content: space-between;
@@ -314,16 +315,16 @@
     cursor: pointer;
   }
   .box1 {
-    background-image: url("/group7-main/Thailand/img/phiphi.jpg");
+    background-image: url("/Thailand/img/phiphi.jpg");
   }
   .box2 {
-    background-image: url("/group7-main/Thailand/img/climbing.jpg");
+    background-image: url("/Thailand/img/climbing.jpg");
   }
   .box3 {
-    background-image: url("https://images.unsplash.com/photo-1556609894-0ae309cb8354?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80");
+    background-image: url("/Thailand/img/ThalayWak.jpg");
   }
   .box4 {
-    background-image: url("https://images.unsplash.com/photo-1601225612316-b4733315a717?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+    background-image: url("/Thailand/img/nightmkt.jpg");
   }
   .Krabi h2 {
     font-size: 2rem;
@@ -338,7 +339,7 @@
     font-size: 7rem;
   }
   .Krabi p {
-    opacity: 0.4;
+    opacity: 0.6;
   }
   .tnx h2 i {
     color: #fd7e13;
@@ -352,8 +353,77 @@
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   }
 
+  /* North Thailand */
+  .ChiangMai {
+    border: 2px red solid;
+    color: #fff;
+    padding: 80px;
+  }
+  .card .box5,.box6,.box7,.box8 {
+    width: 90%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  .box5 {
+    background-image: url("/Thailand/img/DoiInthanon.png");
+  }
+  .box6 {
+    background-image: url("/Thailand/img/DoiAngkhang.png");
+  }
+  .box7 {
+    background-image: url("/Thailand/img/Doisuthep.png");
+  }
+  .box8 {
+    background-image: url("/Thailand/img/waterfall.jpg");
+  }
+  .ChiangMai h2 {
+    font-size: 2rem;
+    letter-spacing: 2.8px;
+  }
+  .ChiangMai p {
+    opacity: 0.6;
+  }
+/* End of North Thailand */
 
-
+/* Central */
+.Bangkok {
+  border: 2px red solid;
+  color: #fff;
+  padding: 80px;
+}
+.card .box9,.box10,.box11,.box12 {
+  width: 90%;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.box9 {
+  background-image: url("/Thailand/img/DoiInthanon.png");
+}
+.box10 {
+  background-image: url("/Thailand/img/DoiAngkhang.png");
+}
+.box11 {
+  background-image: url("/Thailand/img/Doisuthep.png");
+}
+.box12 {
+  background-image: url("/Thailand/img/waterfall.jpg");
+}
+.Bangkok h2 {
+  font-size: 2rem;
+  letter-spacing: 2.8px;
+}
+.Bangkok p {
+  opacity: 0.6;
+}
+/* End of Central */
 
 
 
