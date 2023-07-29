@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="searchbar.css">
 </head>
-<body>
+<body onload="walk()">
   <header>
     <nav>
       <h1>Colombia</h1>
@@ -15,18 +15,23 @@
         <li><a href="../main.html">Home</a></li>
       </ul>
     </nav>
-     <!--<div class="search-bar-container">
-      <form action="" method="get" class="search-bar">
-        <input type="text" placeholder="search Colombia Zone" name="s">
-        <button type="submit"><img src="img/icon-search.png"></button>
-      </form>
-    </div>-->
+
     <div class="container">
-        <div class="background-image"></div>
-        <div class="image-caption">Creator: garytog | Credit: Getty Images | Copyright: Gary Tognoni</div>
-    </div>
+        <!--<div class="background-image"></div>-->
+        <div class="video-col">
+          <video class="embed-item" controls autoplay muted loop id="myVideo" playbackRate=100>
+            <source
+              type="video/mp4"
+              src="Colombiavid2.mp4"
+            />
+          </video>
+        </div>
+        <div class="image-caption">Creator: Colombia | Credit: @marcacolombia | Copyright: Colombia</div>
+    
+      </div>
+
   </header>
-  <p>Colombia is a country located in South America and is known for its numerous tourist destinations. 
+  <p class="intro">Colombia is a country located in South America and is known for its numerous tourist destinations. 
     It is divided into 32 departments, with its capital being Bogota. Colombia offers a wide variety of music,
      delicious cuisine, and traditional costumes that showcase its rich cultural heritage.
  </p>
@@ -34,6 +39,7 @@
   
 
   <section class="destinations">
+    <img id="flag" src="giphy.gif" width="150PX">
 
     <nav class="country">
         <div class="container1">
@@ -109,5 +115,6 @@
   <footer>
     &copy; 2023 Group 7. All rights reserved.
   </footer>
+  <script src="walkflag.js"></script>
 </body>
 </html>
