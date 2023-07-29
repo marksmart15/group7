@@ -2,10 +2,6 @@ body, h1,h2, h3, h4, h5, h6, p, ul, li {
     margin: 0;
     padding: 0;
   }
- 
-
-    
-
   
   body {
     font-family: Arial, sans-serif;
@@ -13,19 +9,31 @@ body, h1,h2, h3, h4, h5, h6, p, ul, li {
   }
   
   header {
-    /*background-color: #333;*/
-    background: url(CartagenaMuralla.jpg);
+    background-color: #333;
+  
     
     background-position: center;
     /*background-size: 100%;*/
     color: white;
-    padding: 20px;
-    height: 400px;
+    padding: 0px;
+    height: 600px;
 
     background-size: cover;
-   
-    
+    /*position: relative;*/ 
+    overflow: hidden;   
   }
+  .video-col {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -100;
+
+}
+
+.embed-item {
+    width: 100%;
+    height: 100%;
+}*/
   p{
     background-color: grey;
     color: #fff;
@@ -165,7 +173,19 @@ body, h1,h2, h3, h4, h5, h6, p, ul, li {
     padding: 5px;
     font-size: 8px;
   }
-  
+  .intro{
+    background-color: grey;
+    color: #fff;
+  }
+  #flag{            	
+    /*visibility: hidden;*/
+     height: 60;
+     width: 97;
+     position: absolute;
+     top: 80px;
+     left:20px;
+     
+ }
 
   
 
