@@ -6,9 +6,31 @@
     <link rel="stylesheet" href="styleform.css">
     <title>Quotation</title>
 </head>
-
+<header>
+    <nav>
+      <h1>Choose your Travel</h1>
+      <ul>
+        <div class="navbar">
+          <a href="../main.html">Home</a>
+          <div class="dropdown">
+            <button class="dropbtn">Destinations
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="Canada/Canada.html">Canada</a>
+              <a href="Colombia/Colombia.html">Colombia</a>
+              <a href="Thailand/Thailand.html">Thailand</a>
+              <a href="Vietnam/Vietnam.html">Vietnam</a>
+            </div>
+          </div>
+          <a href="About/About.html">About</a>
+        </div>
+      </ul>
+    </nav>
+  </header>
+      
    <body>
-    <h1>Choose your Travel</h1>
+
     <form id="formulario">
         <label for="name" id="first">Name:</label>
         <input type="text" id="name" required placeholder="Leo Messi"><br>
@@ -68,6 +90,23 @@
 
         <input type="button" value="Agregar" onclick="agregarPersona()">
     </form>
+    <footer>
+        <div id="getnewinfo">
+          <h4>Subscribe to get our travel tips and hot deals 
+            <form id="formsubmit">
+              <input type="text" placeholder="Your Email Address">
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+          </h4>
+        </div>
+        <p>&copy; 2023 Group 7. All rights reserved.</p>
+        <div class="footer-link">
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookies</a>
+        <a href="#">Complaints</a>
+      </div>
+      </footer>
     <script src="script.js"></script>
     
 </body>
