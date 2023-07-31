@@ -6,13 +6,17 @@
     <title>Vietnam</title>
     <link rel="stylesheet" href="Vietnam.css">
     <link rel="stylesheet" href="/searchbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
 </head>
 <body>
   <div class="container">
     <header>
-        <nav>
-          <h1>Travel Log</h1>
-<div class="navbar">
+        
+          <div class="logo"><h1>Travel Log</h1></div>  
+<nav class="navbar">
+  <!--Navigation links here-->
+  <div class="menu">
           <a href="/main.html">Home</a>
           <div class="dropdown">
             <button class="dropbtn">Destinations
@@ -26,16 +30,46 @@
             </div>
           </div>
           <a href="/About/About.html">About</a>
-        </div>
+          <a href="/form.html">Booking</a>
         </nav>
+        <div class="icons">
+          <i class="fas fa-search" id="search-btn"></i>
+          <i class="fas fa-user" id="login-btn"></i>
+        </div>
+        <form action="" method="get" class="search-bar-container">
+          <input type="search" id="search-bar" placeholder="search destinations, packages & more">
+        <label for="search-bar" class="fas fa-search"></label>
+        </form>
+       <!-- <div class="signup">
+          <a href="">Sign Up</a>
+        </div>
         <div class="search-bar-container">
           <form action="" method="get" class="search-bar">
             <input type="text" placeholder="search destinations & more" name="s">
             <button type="submit"><img src="/img/icon-search.png"></button>
           </form>
         </div>
-         
+        -->
+        
+        
+      
+      
       </header>
+
+      <!--LOGIN FORM CONTAINER START
+<div class="login-form-container">
+      <form action="">
+        <h3>login</h3>
+        <input type="email" class="login" placeholder="enter your email">
+        <input type="password" class="login" placeholder="enter your password">
+        <input type="submit" value="login now" class="login-submit-btn">
+        <input type="checkbox" name="" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">register now</a></p>
+      </form>
+    </div>
+  -->
       <div class="video-container">
    
         <!-- <iframe width="500" height="250" src="https://www.youtube.com/embed/yR6tVxgDWLk?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; muted" allowfullscreen></iframe>
@@ -44,7 +78,7 @@
        -->
       </video>
       <div class="embed embed-16-9">
-        <video class="embed-item" controls autoplay muted loop>
+        <video class="embed-item"  autoplay muted loop>
           <source
             type="video/mp4"
             src="vid/Vietnam1.mp4"
@@ -53,16 +87,8 @@
       
       </div>
       </div>
-<div class="Intro-Header" >
-    <div>Vietnam Tours</div>
-   <!-- <div class="photos"></div>
-    <img id="photo1" src="img/Vietnam2.jpg">
-    <img id="photo2" src="img/Vietnam3.jpg">
-  
-   -->
-   </div>
     <nav>
-        <h2> Explore</h2>
+        <h2> Ready To Explore?</h2>
         
     </nav>
 
@@ -77,11 +103,9 @@
     </div>
     </div>
   </section>
-    <!-- Add weather forecast later-->
+     Add weather forecast later-->
   
-  <div class="weatherforecast">
-    <h1>Weather Forecast</h1>
-  </div> -->
+ 
 
 
 
@@ -127,6 +151,9 @@
    </table>
   </div>
 </div>
+
+
+<!-- 
 <div class="places-container">
   <p>Must-Travel Places</p>
   <div class="places">
@@ -156,9 +183,159 @@
   </div>
 </div>
 
-<div class="food-tours">
-  <h4>Best Dishes Must Try In Vietnam</h4>
-  <p>Vietnam’s food is one of the most fascinating parts of the country’s culture. It is complex, dynamic and often surprising – but never boring. Here are eight things you probably didn’t know about Vietnamese cuisine. <span id="dots">...</span>
+ -->
+<!-- Tab links -->
+<div class="tabcontainer bg">
+  
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'NorthernVn')" id="defaultOpen">Northern Vietnam</button>
+  <button class="tablinks" onclick="openCity(event, 'CentralVn')">Central Vietnam</button>
+  <button class="tablinks" onclick="openCity(event, 'SouthernVn')">Southern Vietnam</button>
+</div>
+
+
+<!-- Tab content -->
+<div id="NorthernVn" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <div class="column">
+  <div class="text-box">
+  <h1>Northern Vietnam</h1>
+  <p>The north of Vietnam makes a statement with majestic mountain ranges, centuries-old rice terraces, and fascinating ethnic groups.</p>
+  <h2>Hanoi</h2>
+  <p>Hanoi, the capital of Vietnam is known as one of the most appealing cities in Southeast Asia. It boasts many interesting things ranging from ancient monuments, religious structures to modern architecture. If you are ready to explore in this beautiful city, apart from stunning sites, you also need to get a bit of insight into it by checking some Hanoi facts listed below.</p>
+  <h2>Ha Long Bay</h2>
+  <p>Ha Long Bay is a surreal landscape of limestone karsts erupting from the ocean like tidal waves made solid by magic and time.</p>
+  <h2>Mai Chau</h2>
+  <p>Situated in easy reach from Hanoi, Mai Châu is a breath of fresh air, and a great option if you’re looking for a calm destination rich in nature and culture.</p>
+  <h2>Fansipan Mountain, Sapa</h2>
+  <p>The highest peak in the region, Mount Fansipan, crowns the ragged ridge line high above town.</p>
+</div>
+<div class="card">
+  <div class="places">
+    <h3>Hanoi</h3>
+    <img src="img/Hanoi.jpg" alt="" style="width: 300px; height: 250px; border-radius: 12px;">
+    <br>
+    <a href="">Learn More</a>
+  </div>
+  <div class="places">
+    <h3>Ha Long Bay</h3>
+    <img src="img/HaLongBay.jpg" alt="" style="width: 300px; height: 250px; border-radius: 12px;">
+    <br>
+    <a href="">Learn More</a>
+  </div>
+  <div class="places">
+    <h3>Mai Chau</h3>
+    <img src="img/MaiChau.jpg" alt="" style="width: 300px; height: 250px; border-radius: 12px;">
+    <br>
+    <a href="">Learn More</a>
+  </div>
+  <div class="places">
+    <h3>Fansipan Mountain, Sapa</h3>
+    <img src="img/Fansipan.jpg" alt="" style="width: 300px; height: 250px; border-radius: 12px;">
+    <br>
+    <a href="">Learn More</a>
+  </div>
+  </div>
+</div>
+</div>
+
+
+<div id="CentralVn" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <div class="column">
+  <div class="text-box">
+  <h1>Central Vietnam</h1>
+  <p>Central Vietnam is known for its well-preserved historical sites, smiling locals, and soothing natural beauty. The central coast will beckon you with the promise of enriching experiences and sun-kissed days by the beach.</p>
+  <h2>Hoi An</h2>
+  <p>Graceful, historic Hoi An is Vietnam’s most atmospheric and delightful town. Once a major port, it boasts the grand architecture and beguiling riverside setting that befits its heritage, and the 21st-century curses of traffic and pollution are almost entirely absent.</p>
+  <h2>Phong Nha National Park</h2>
+  <p>Riddled with hundreds of cave systems – many of extraordinary scale and length – and spectacular underground rivers, Phong Nha is a speleologists’ heaven on earth, and a real treat for anyone who appreciates the sight of nature at its most raw.</p>
+  <h2>The Imperial City of Hue</h2>
+  <p>Famously being one of Vietnam’s seven UNESCO World Heritage Sites, the Imperial City of Hue has long been a must-see attraction for tourists visiting a hidden charm of Vietnam.</p>
+  <h2>Ba Na Hills</h2>
+  <p>Ba Na Hills is a popular tourist destination located in Da Nang, Vietnam. It is a hill station and resort complex situated in the Truong Son Mountains.</p>
+</div>
+<div class="card">
+<div class="places">
+  <h3>Hoi An</h3>
+  <img src="img/HoiAn.jpg" alt="" style="width: 300px; height: 250px; border-radius: 12px;">
+  <br>
+  <a href="">Learn More</a>
+</div>
+<div class="places">
+  <h3>Phong Nha</h3>
+  <img src="img/PhongNha.jpg" alt="" style="width: 300px; height: 250px; border-radius: 12px;">
+  <br>
+  <a href="">Learn More</a>
+</div>
+<div class="places">
+  <h3>The Imperial City of Hue</h3>
+  <img src="img/ImperialCityofHue.jpg" alt="" style="width: 300px; height: 250px; border-radius: 12px;">
+  <br>
+  <a href="">Learn More</a>
+</div>
+<div class="places">
+  <h3>Golden Bridge, Ba Na Hills</h3>
+  <img src="img/GoldenBridge.jpg" alt="" style="width: 300px; height: 250px; border-radius: 12px;">
+  <br>
+  <a href="">Learn More</a>
+</div>
+</div>
+</div>
+</div>
+
+<div id="SouthernVn" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <div class="column">
+  <div class="text-box">
+  <h1>Southern Vietnam</h1>
+  <p>From island escapes to the non-stop action, southern Vietnam offers both vibrant urban energy and mellow countryside.</p>
+  <h2>Ho Chi Minh</h2>
+  <p>Once known as Saigon, today Ho Chi Minh City is renowned as the country’s metropolitan city, filled with skyscrapers, rooftop views, and urban-cool activities.</p>
+  <h2>Binh Thuan</h2>
+  <p>Think gorgeous lakes. Gurgling streams. Dreamy, desert-like spaces. Rocky beaches and windswept seas … Binh Thuan has them all.</p>
+  <h2>Chau Doc</h2>
+  <p>Brimming with lush forests, bustling riverbanks, and brilliant temples, the border town of Chau Doc is a compelling spot to experience the fusion of cultures and colours that make up Vietnam’s Mekong Delta. Chau Doc may surprise you with its hidden treasures: mysterious wetlands, ethnic Cham villages, and atmospheric temples. This small town has fascinating stories to tell: you might need to stay a while to hear them all.</p>
+  <h2>Phu Quoc</h2>
+  <p>Phu Quoc's gleaming white sand beaches have earned it the nickname "Pearl Island", but the island's environmental conservation efforts and cultural heritage deserve as much attention as its picturesque sand and surf.</p>
+</div>
+<div class="card">
+  <div class="places">
+    <h3>Ho Chi Minh </h3>
+    <img src="img/HCM.jpg" alt="" style="width: 300px; height: 250px; border-radius: 12px;">
+    <br>
+    <a href="">Learn More</a>
+  </div>
+  <div class="places">
+    <h3>Mui Ne, Binh Thuan</h3>
+    <img src="img/MuiNe.jpg" alt="" style="width: 300px; height: 250px; border-radius: 12px;">
+    <br>
+    <a href="">Learn More</a>
+    
+  </div>
+  <div class="places">
+    <h3>Chau Doc</h3>
+    <img src="img/NguHanhSon.jpg" alt="" style="width: 300px; height: 250px; border-radius: 12px;">
+    <br>
+    <a href="">Learn More</a>
+    
+  </div>
+  <div class="places">
+    <h3>Phu Quoc</h3>
+    <img src="img/PhuQuoc.jpg" alt="" style="width: 300px; height: 250px; border-radius: 12px;">
+    <br>
+    <a href="">Learn More</a>
+  </div>
+  </div>
+</div>
+  </div>
+</div>
+
+<div class="food-container">
+  <h1 style="color: rgb(215, 179, 17); font-size: 35px;">Fabulous Food</h1>
+  
+  <h4 style="font-size: 25px;">Best Dishes Must Try In Vietnam</h4>
+  <p style="font-size: 17px; text-align: center;">Vietnam’s food is one of the most fascinating parts of the country’s culture. It is complex, dynamic and often surprising – but never boring. Here are eight things you probably didn’t know about Vietnamese cuisine. <span id="dots"></span>
     <span id="more">Two most important factors in a culinary travel itinerary are the food itself, the art of preparation, and the way of enjoying it.
       Vietnam is divided into three main regions: north, south and central. Although there are common threads between the cuisines of these areas, each boasts its own individual characteristics. In northern Vietnam, food tends to be less spicy and black pepper is strongly favoured over chilli. It’s also home to the legendary bún chả, which Barack Obama and Anthony Bourdain famously enjoyed together in 2016. Central Vietnam, however, boasts complex mixtures of spicy flavours. The cuisine of Hue, the ancient capital of Vietnam, is particularly revered for its variety of distinctive and delicious dishes. Southern Vietnamese cuisine tends to be sweeter and the region’s fertile soil means that herbs are used more liberally in cooking. The southern version of phở tends to be more popular than its northern counterpart, although it’s best to try both to be sure.
        Currently, in Vietnam, the most attractive destinations to experience culinary tourism are: Can Tho, Hue, Hoi An, Hanoi, and Ho Chi Minh City.</span> </p>
@@ -172,19 +349,9 @@
   <img src="img/Vietfood6.jpg">
  </div>
 </div>
-<!--Packages section starts-->
-<section class="packages" id="packages">
-  <h1 class="packages-heading">
-    <span>P</span>
-    <span>A</span>
-    <span>C</span>
-    <span>K</span>
-    <span>A</span>
-    <span>G</span>
-    <span>E</span>
-    <span>S</span>
-  </h1>
 
+
+<!--footer-->
   <footer>
     <div id="getnewinfo">
       <h3>Subscribe to get our travel tips and hot deals 
@@ -204,6 +371,6 @@
   </footer>
 </div>
 </div>
-  <script src="/Vietnam/VietnamJS.js"></script>  
+  <script src="VietnamJS.js"></script>  
 </body>
 </html>
