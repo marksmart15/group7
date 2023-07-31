@@ -3,17 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
   <title>Colombia</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="searchbar.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./searchbar.css">
 </head>
 <body onload="walk()">
   <header>
     <nav>
       <h1>Colombia</h1>
       <ul>
-        <li><a href="../main.html">Home</a></li>
-        <li><a href="../form.html">Quotation</a></li>
+        <div class="navbar">
+          <a href="../main.html">Home</a>
+          <div class="dropdown">
+            <button class="dropbtn">Destinations
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="Canada/Canada.html">Canada</a>
+              <a href="./Colombia.html">Colombia</a>
+              <a href="Thailand/Thailand.html">Thailand</a>
+              <a href="Vietnam/Vietnam.html">Vietnam</a>
+            </div>
+          </div>
+          <a href="../form.html">Quotation</a></li>
+          <a href="About/About.html">About</a>
+        </div>
+      
+      
+
+       
       </ul>
     </nav>
 
@@ -23,7 +42,7 @@
           <video class="embed-item" controls autoplay muted loop id="myVideo" playbackRate=100>
             <source
               type="video/mp4"
-              src="Colombiavid2.mp4"
+              src="./Colombiavid2.mp4"
             />
           </video>
         </div>
@@ -40,11 +59,11 @@
   
 
   <section class="destinations">
-    <img id="flag" src="giphy.gif" width="150PX">
+    <img id="flag" src="./giphy.gif" width="150PX">
 
     <nav class="country">
         <div class="container1">
-            <img class="resize" src="turisticos.jpg" alt="turistics">
+            <img class="resize" src="./turisticos.jpg" alt="turistics">
             <div class="image-caption1">Copyright: 
                 https://www.barcelo.com/pinandtravel/en/cartagena-de-indias-in-5-plazas/,
                 Creator: Jess Kraft,
@@ -63,7 +82,7 @@
 
     <nav class="country">
     <div class="container1">
-        <img class="resize" src="ajiaco.jpg" alt="comida">
+        <img class="resize" src="./ajiaco.jpg" alt="comida">
         <div class="image-caption1">Copyright: https://www.quearepas.com/comida-colombiana/ajiaco-colombiano/,
             KELSEY HANSEN; PROP STYLING: THOM DRIVER; FOOD STYLING: ANNA HAMPTON,
             https://familiakitchen.com/how-to-make-arepas/,
@@ -82,7 +101,7 @@
     <nav class="country">
       
       <div class="container1">
-        <img class="resize" src="Musica.jpg" alt="music">
+        <img class="resize" src="./Musica.jpg" alt="music">
         <div class="image-caption1">https://quepasamedia.com/noticias/entretenimiento/la-musica-tradicional-la-gran-protagonista-del-carnaval-de/,
             https://www.elnegociodelamusica.com/generos-musicales-vallenato/,
             Creator: Aviles, Hector 
@@ -99,7 +118,7 @@
 
     <nav class="country">
       <div class="container1">
-            <img class="resize" src="People.jpg" alt="people">
+            <img class="resize" src="./People.jpg" alt="people">
             <div class="image-caption1">Copyright:https://blog.redbus.co/cultura/caracteristicas-definen-colombianos/
                 Creator: boggy22 Credit: Depositphotos
                 https://dailycoffeenews.com/2019/01/04/juan-valdez-actor-carlos-sanchez-remembered-as-a-hero-to-colombian-coffee/
@@ -114,8 +133,23 @@
   </section>
 
   <footer>
-    &copy; 2023 Group 7. All rights reserved.
+    <div id="getnewinfo">
+      <h4>Subscribe to get our travel tips and hot deals 
+        <form>
+          <input type="text" placeholder="Your Email Address">
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+      </h4>
+    </div>
+    <p>&copy; 2023 Group 7. All rights reserved.</p>
+    <div class="footer-link">
+    <a href="#">Terms and Conditions</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Cookies</a>
+    <a href="#">Complaints</a>
+  </div>
   </footer>
-  <script src="walkflag.js"></script>
+  
+  <script src="./walkflag.js"></script>
 </body>
 </html>
