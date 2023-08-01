@@ -6,16 +6,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="/Thailand/Thailand.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></head>
-    <link rel="stylesheet" href="/group7-main/searchbar.css">
+    <link rel="stylesheet" href="/searchbar.css">
 
-<body>
-    <!-- nav -->
-    
-    <div class="container">
+    <body>
+      <div class="container">
         <header>
-            <nav>
-              <h1>Travel Log</h1>
-    <div class="navbar">
+            
+              <div class="logo"><h1>Travel Log</h1></div>  
+    <nav class="navbar">
+      <!--Navigation links here-->
+      <div class="menu">
               <a href="/main.html">Home</a>
               <div class="dropdown">
                 <button class="dropbtn">Destinations
@@ -28,264 +28,282 @@
                   <a href="/Vietnam/Vietnam.html">Vietnam</a>
                 </div>
               </div>
-              <a href="#">About</a>
-            </div>
+              <a href="/About/About.html">About</a>
+              <a href="/form.html">Booking</a>
             </nav>
-            <div class="search-bar-container">
-              <form action="" method="get" class="search-bar">
-                <input type="text" placeholder="search destinations & more" name="s">
-                <button type="submit"><img src="/group7-main/group7-main/img/icon-search.png"></button>
-              </form>
+            <div class="icons">
+              <i class="fas fa-search" id="search-btn"></i>
+              <i class="fas fa-user" id="login-btn"></i>
             </div>
+            <form action="" method="get" class="search-bar-container">
+              <input type="search" id="search-bar" placeholder="search destinations, packages & more">
+            <label for="search-bar" class="fas fa-search"></label>
+            </form>
+           
+        </header>
     
-    <!-- end NAV -->
+          <!-- VDO part -->
+        <div class="video-container">
+       
+            <!-- <iframe width="500" height="250" src="https://www.youtube.com/embed/yR6tVxgDWLk?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; muted" allowfullscreen></iframe>
+            
+            <video width="320" height="240" controls muted autoplay loop><source src="https://www.youtube.com/embed/yR6tVxgDWLk" type="video/mp4" >
+           -->
+          </video>
+          <div class="embed embed-16-9">
+            <video class="embed-item"  autoplay muted loop>
+              <source
+                type="video/mp4"
+                src="/Thailand/img/thailand_-_33730 (1080p).mp4"
+              />
+            </video>
+          
+          </div>
+          </div>
+        <nav>
+            <h2> Ready To Explore?</h2>
+        </nav>
+    
+      
 
-    <!-- VIDEO -->
-            <div class="video">
-                <video class="embed-item" controls autoplay muted loop id="myVideo">
-                  <source
-                    type="video/mp4"
-                    src="/Thailand/img/thailand_-_33730 (1080p).mp4"
-                  />
-                </video>
-              </div>
-    <!-- End VDEO -->
 
-    <section>
-    <div class="blurred-box">
-        <div class="Welcome">
-            <h1>Welcome to Thailand</h1>
-            <p>'Siam' is the Southeast Asia country with a rich and diverse cultures, foods, and tourist attractions</p>
-        </div>
+
+        <!-- Google map -->
+      <div class="map-glance-container">
+      <div class="map-container">
+        <h3>Location</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7961857.208451619!2d96.18034762370891!3d12.99578250052609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304d8df747424db1%3A0x9ed72c880757e802!2sThailand!5e0!3m2!1sen!2sca!4v1689042321547!5m2!1sen!2sca" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="glance">
+       <table>
+        <caption>Thailand</caption>
+        <tr>
+          <th>SIAM</th>
+          <th>CAPITAL CITY : </th>
+          <th>CURRENCY :</th>
+        </tr>
+        <tr>
+          <td>Thailand is knowned as 'Siam', where has it all from exotic cuisines, endless opportunity for adventure and the place is friendly people in the world.</td>
+          <td>Bangkok</td>
+          <td>Thai Baht. $1 USD equals roughly 31 Thai Baht. You can often find cheap local meals for about 30-50 Baht ($1-2 USD), and an average beer at a bar can cost between 70-100 Baht ($2-3 USD).</td>
+        </tr>
+        <tr>
+          <th>LANGUAGE :</th>
+          <th>TRANSPORTATION :</th>
+          <th>POPULATION :</th>
+
+        </tr>
+        <tr>
+          <td>Thai (In touristy areas, many locals speak English)</td>
+          <td>Getting around Thailand is super easy. Thailand has some wonderful public transport infrastructure. Main transport such as skytrain (BTS), underground train (MRT), public bus, Taxi, Uber, public motorcycle and Tuk-Tuk.</td>
+          <td>69,950,850 = 0.22% increase from 2020.</td>
+        </tr>
+       </table>
+      </div>
     </div>
-    </section>
-
-
-
-    <!-- MAP & Thai -->
-    <section>
-        <div class="contain">
-            <div class="content">
-                <div class="content_left">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7961857.208451619!2d96.18034762370891!3d12.99578250052609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304d8df747424db1%3A0x9ed72c880757e802!2sThailand!5e0!3m2!1sen!2sca!4v1689042321547!5m2!1sen!2sca" width="100%" height="390" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="content_right">
-                    <h1>Siam</h1>
-                    <p>Thailand is knowned as 'Siam', the country has it all from exotic cuisines, endless opportunity for adventure and the place is friendly people in the world.</p>
-                    <br>
-                    <p>CAPITAL CITY : Bangkok</p>
-                    <br>
-                    <p>CURRENCY : Thai Baht (See current exchange rates). $1 USD equals roughly 31 Thai Baht. You can often find cheap local meals for about 30-50 Baht ($1-2 USD), and an average beer at a bar can cost between 70-100 Baht ($2-3 USD).</p>
-                    <br>
-                    <p>LANGUAGE : Thai (In touristy areas, many locals speak English)</p>
-                    <br>
-                    <p>TRANSPORTATION : Getting around Thailand is super easy. Thailand has some wonderful public transport infrastructure in place. Main transport such as Skytrain (BTS), Underground train (MRT), public bus, Taxi, Uber, public motorcycle and Tuk-Tuk.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-        <!-- End of Map &THai -->
-</div>   
-
-
-
-
-
-
-
-
- <!-- box -->
- <div class="container bg">
+    
+    
+    <!-- box information -->
+    <div class="tabcontainer bg">
+      
     <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'Capital City')" id="defaultOpen">Capital City</button>
-        <button class="tablinks" onclick="openCity(event, 'North of Thailand')">North of Thailand</button>
-        <button class="tablinks" onclick="openCity(event, 'South of Thailand')">South of Thailand</button>
+      <button class="tablinks" onclick="openCity(event, 'NorthernVn')" id="defaultOpen">Northern Thailand</button>
+      <button class="tablinks" onclick="openCity(event, 'CentralVn')">Central Thailand</button>
+      <button class="tablinks" onclick="openCity(event, 'SouthernVn')">Southern Thailand</button>
     </div>
-  
-
-    <div id="Capital City" class="tabcontent">
-        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-        <div class="box">
-          <div class="Bangkok" style="width:50%;">
-            <div class="tnx">
-              <h2><i class="fas fa-map-marker-alt"></i>Capital City</h2>
-            </div>
-            <div class="txt">
-              <h1>Bangkok</h1>
-            </div>
-            <p>Thailand's second city - Smaller, more relaxed answer to Bangkok. The city is surrounded by natural perfection where suitable for travelers who seek a trekking adventure and a spiritual awakening of northern arts & cultures.</p>
-            <br>
-            <h2>Doi Inthanon</h2>
-              <p>The highest peak in Thailand, and the national park on mountain  that surrounds several waterfalls and a hill tribe village are other attractions, along with two pagodas. Travelers can do some trekking and hike the mountain, or take a more leisurely route around the park.</p>
-            <h2>Doi AngKhang</h2>
-              <p>A natural tourist attraction, tourists can experience winter flowers, Phaya Sua Krong flowers espeacially Wild Himalayan Cherry or Sakura of Thailand and many more, sea of fog, strawberry farm, 2000 Tea Plantation and Monson viewpoint.</p>
-            <h2>Wat Phra That Doi Suthep</h2>
-              <p>The most popular tourist attractions in the city, Wat Doi Suthep's central shrine contains a much-revered seated Buddha, the gallery and the chedis which represented Chiang Mai and Sukhothai styles. Travelers can reach the temple by hiking up the mountain, renting a motorbike, or hopping into a songthaew(red trucks). 
-                Tip: Visiting just before sunset is a special treat.</p>
-              <h2>Mae Ya Waterfall</h2>
-              <p>Waterfalls are considered as the best camping spot amidst a green forest park. There has s 30-storied cliff waterfall is a great place for getting soaked and making your mind and body fresh and has spot of the cliff to get a close view of the water sprinkle. </p>
-            </div>
-          <div class="card" style="width:50%;">
-            <a href="https://www.google.ca/maps/place/Doi+Inthanon/@18.5880628,98.47674,15z/data=!3m1!4b1!4m6!3m5!1s0x30dbaa9c1c7fd96b:0xf3f01fb3a96c7054!8m2!3d18.5880431!4d98.4870612!16zL20vMDFmMXMx?entry=ttu" target="_blank">
-              <div class="box9">
-                <h2>Doi Inthanon</h2>
-              </div>
-            </a>
-            <a href="https://www.google.ca/maps/place/Doi+Ang+Khang/@19.8697417,99.0446788,15z/data=!3m1!4b1!4m6!3m5!1s0x30d0cfacf1e64487:0x580102e676e4e485!8m2!3d19.8697222!4d99.055!16s%2Fm%2F0wkwfr_?entry=ttu" target="_blank">
-              <div class="box10">
-                <h2>Doi AngKhang</h2>
-              </div>
-            </a>
-            <a href="https://www.google.ca/maps/place/Wat+Phra+That+Doi+Suthep/@18.8049058,98.9180256,17z/data=!4m10!1m2!2m1!1sWat+Phra+That+Doi+Suthep!3m6!1s0x30da39b5dff1ddb5:0x9d864c5caec57e21!8m2!3d18.8049889!4d98.9216337!15sChhXYXQgUGhyYSBUaGF0IERvaSBTdXRoZXBaGiIYd2F0IHBocmEgdGhhdCBkb2kgc3V0aGVwkgEPYnVkZGhpc3RfdGVtcGxl4AEA!16zL20vMGNmd3M2?entry=ttu" target="_blank">
-              <div class="box11">
-                <h2>Wat Phra That Doi Suthep</h2>
-              </div>
-            </a>
-            <a href="https://www.google.ca/maps/place/Mae+Ya+Water+Fall/@18.4396776,98.5598844,14z/data=!4m10!1m2!2m1!1sMae+Ya+Waterfall!3m6!1s0x30dbaf43bd171d47:0xcc0c05d6c71c2389!8m2!3d18.4396776!4d98.5979932!15sChBNYWUgWWEgV2F0ZXJmYWxskgESdG91cmlzdF9hdHRyYWN0aW9u4AEA!16s%2Fg%2F11b69czx6t?entry=ttu" target="_blank">
-              <div class="box12">
-                <h2>Mae Ya Waterfall</h2>
-              </div>
-            </a>
-            <!--       <div class="box2">
-              <h2>Island</h2>
-            </div>
-            <div class="box3">
-              <h2>Mountain</h2>
-            </div>
-            <div class="box4">
-              <h2>Scenery</h2>
-            </div> -->
-          </div>
-        </div>
-
-      </div>
-      
-
-
-      <div id="North of Thailand" class="tabcontent">
-        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-        <div class="box">
-          <div class="ChiangMai" style="width:50%;">
-            <div class="tnx">
-              <h2><i class="fas fa-map-marker-alt"></i>North of Thailand</h2>
-            </div>
-            <div class="txt">
-              <h1>Chiang Mai</h1>
-            </div>
-            <p>Thailand's second city - Smaller, more relaxed answer to Bangkok. The city is surrounded by natural perfection where suitable for travelers who seek a trekking adventure and a spiritual awakening of northern arts & cultures.</p>
-            <br>
-            <h2>Doi Inthanon</h2>
-              <p>The highest peak in Thailand, and the national park on mountain  that surrounds several waterfalls and a hill tribe village are other attractions, along with two pagodas. Travelers can do some trekking and hike the mountain, or take a more leisurely route around the park.</p>
-            <h2>Doi AngKhang</h2>
-              <p>A natural tourist attraction, tourists can experience winter flowers, Phaya Sua Krong flowers espeacially Wild Himalayan Cherry or Sakura of Thailand and many more, sea of fog, strawberry farm, 2000 Tea Plantation and Monson viewpoint.</p>
-            <h2>Wat Phra That Doi Suthep</h2>
-              <p>The most popular tourist attractions in the city, Wat Doi Suthep's central shrine contains a much-revered seated Buddha, the gallery and the chedis which represented Chiang Mai and Sukhothai styles. Travelers can reach the temple by hiking up the mountain, renting a motorbike, or hopping into a songthaew(red trucks). 
-                Tip: Visiting just before sunset is a special treat.</p>
-              <h2>Mae Ya Waterfall</h2>
-              <p>Waterfalls are considered as the best camping spot amidst a green forest park. There has s 30-storied cliff waterfall is a great place for getting soaked and making your mind and body fresh and has spot of the cliff to get a close view of the water sprinkle. </p>
-            </div>
-          <div class="card" style="width:50%;">
-            <a href="https://www.google.ca/maps/place/Doi+Inthanon/@18.5880628,98.47674,15z/data=!3m1!4b1!4m6!3m5!1s0x30dbaa9c1c7fd96b:0xf3f01fb3a96c7054!8m2!3d18.5880431!4d98.4870612!16zL20vMDFmMXMx?entry=ttu" target="_blank">
-              <div class="box5">
-                <h2>Doi Inthanon</h2>
-              </div>
-            </a>
-            <a href="https://www.google.ca/maps/place/Doi+Ang+Khang/@19.8697417,99.0446788,15z/data=!3m1!4b1!4m6!3m5!1s0x30d0cfacf1e64487:0x580102e676e4e485!8m2!3d19.8697222!4d99.055!16s%2Fm%2F0wkwfr_?entry=ttu" target="_blank">
-              <div class="box6">
-                <h2>Doi AngKhang</h2>
-              </div>
-            </a>
-            <a href="https://www.google.ca/maps/place/Wat+Phra+That+Doi+Suthep/@18.8049058,98.9180256,17z/data=!4m10!1m2!2m1!1sWat+Phra+That+Doi+Suthep!3m6!1s0x30da39b5dff1ddb5:0x9d864c5caec57e21!8m2!3d18.8049889!4d98.9216337!15sChhXYXQgUGhyYSBUaGF0IERvaSBTdXRoZXBaGiIYd2F0IHBocmEgdGhhdCBkb2kgc3V0aGVwkgEPYnVkZGhpc3RfdGVtcGxl4AEA!16zL20vMGNmd3M2?entry=ttu" target="_blank">
-              <div class="box7">
-                <h2>Wat Phra That Doi Suthep</h2>
-              </div>
-            </a>
-            <a href="https://www.google.ca/maps/place/Mae+Ya+Water+Fall/@18.4396776,98.5598844,14z/data=!4m10!1m2!2m1!1sMae+Ya+Waterfall!3m6!1s0x30dbaf43bd171d47:0xcc0c05d6c71c2389!8m2!3d18.4396776!4d98.5979932!15sChBNYWUgWWEgV2F0ZXJmYWxskgESdG91cmlzdF9hdHRyYWN0aW9u4AEA!16s%2Fg%2F11b69czx6t?entry=ttu" target="_blank">
-              <div class="box8">
-                <h2>Mae Ya Waterfall</h2>
-              </div>
-            </a>
-            <!--       <div class="box2">
-              <h2>Island</h2>
-            </div>
-            <div class="box3">
-              <h2>Mountain</h2>
-            </div>
-            <div class="box4">
-              <h2>Scenery</h2>
-            </div> -->
-          </div>
-        </div>
-      </div>
-      
-      <div id="South of Thailand" class="tabcontent">
-        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-        <div class="box">
-          <div class="Krabi" style="width:50%;">
-            <div class="tnx">
-              <h2><i class="fas fa-map-marker-alt"></i>South of Thailand</h2>
-            </div>
-            <div class="txt">
-              <h1>Krabi</h1>
-            </div>
-            <p>Krabi is the top three provience of South, charming city of the Andaman Sea. There has more than 130 large and small islands, with white sandy and sparkling water, abundant coral reefs including mangrove forests and caves.</p>
-              <br>
-              <h2>Phi Phi Island</h2>
-              <p>The island is the most famous for tourist destination, a peak of scenery to spectacular provided with accommodations, restaurants and facilities. There have a diving and snorkeling spots which is a paradise for divers.</p>
-              <h2>Railay</h2>
-              <p>Railay Beach has a limestone cliff. There has a viewpoint that is a very beautiful ridge. The highlight is the rock climbing activity.</p>
-              <h2>Thale Waek</h2>
-              <p>Location of beach is combined by three main islands, Koh Mor, Koh Tub and Koh Kai. Tide low is highlight as it will part white sand and water. When the tide is high, it is the best spot for swimming with a different kind of fishes.</p>
-              <h2>Krabi Night Market</h2>
-              <p>Night market is open every Friday to Sunday in evening. There are lots of food local food stalls for travelers.</p>
-            </div>
-          <div class="card" style="width:50%;">
-            <a href="https://www.google.ca/maps/place/Ko+Phi+Phi+Don/@7.7527351,98.7328268,13z/data=!3m1!4b1!4m6!3m5!1s0x3051dee915cc99bb:0x75bea0ddd8e4d014!8m2!3d7.7461158!4d98.77841!16zL20vMDNmZ3hw?entry=ttu" target="_blank">
-              <div class="box1">
-                <h2>Phi Phi Island</h2>
-              </div>
-            </a>
-            <a href="https://www.google.ca/maps/place/Railay+Beach/@8.0117454,98.8321395,17z/data=!3m1!4b1!4m6!3m5!1s0x3051ea9e0792e58b:0x61d88bb17c215081!8m2!3d8.011711!4d98.837776!16zL20vMDVfc2R0?entry=ttu" target="_blank">
-              <div class="box2">
-                <h2>Railay</h2>
-              </div>
-            </a>
-            <a href="https://www.google.ca/maps/place/Thale+Waek/@7.9608178,98.8087322,17z/data=!3m1!4b1!4m6!3m5!1s0x3051c18cffaa28ab:0x21f827ff93a4f895!8m2!3d7.9608125!4d98.8113125!16s%2Fg%2F11hcqlt1t9?entry=ttu" target="_blank">
-              <div class="box3">
-                <h2>Thale Waek</h2>
-              </div>
-            </a>
-            <a href="https://www.google.ca/maps/place/Krabi+Night+Market/@8.0652574,98.9137108,17z/data=!3m1!4b1!4m6!3m5!1s0x305194994ca75b83:0x5587e271786ad215!8m2!3d8.0652521!4d98.9162911!16s%2Fg%2F11c3svgdhd?entry=ttu" target="_blank">
-              <div class="box4">
-                <h2>Night Market</h2>
-              </div>
-            </a>
-            <!--       <div class="box2">
-              <h2>Island</h2>
-            </div>
-            <div class="box3">
-              <h2>Mountain</h2>
-            </div>
-            <div class="box4">
-              <h2>Scenery</h2>
-            </div> -->
-          </div>
-        </div>
-
-
-      </div>
-
-
-
-
     
     
-  
-  </div>
-
-
-
-</body>
+    <!-- Tab content -->
+    <div id="NorthernVn" class="tabcontent">
+      <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <div class="column">
+      <div class="text-box">
+      <h1>North of Thailand</h1>
+      <h1>'Chiang Mai'</h1>
+      <p>Thailand's second city - Smaller, more relaxed answer to Bangkok. The city is surrounded by natural perfection where suitable for travelers who seek a trekking adventure and a spiritual awakening of northern arts & cultures.</p>
+      <br>
+      <br>
+      <h2>Doi Inthanon</h2>
+      <p>The highest peak in Thailand, and the national park on mountain  that surrounds several waterfalls and a hill tribe village are other attractions, along with two pagodas. Travelers can do some trekking and hike the mountain, or take a more leisurely route around the park.</p>
+      <h2>Doi AngKhang</h2>
+      <p>A natural tourist attraction, tourists can experience winter flowers, Phaya Sua Krong flowers espeacially Wild Himalayan Cherry or Sakura of Thailand and many more, sea of fog, strawberry farm, 2000 Tea Plantation and Monson viewpoint.</p>
+      <h2>Wat Phra That Doi Suthep</h2>
+      <p>The most popular tourist attractions in the city, Wat Doi Suthep's central shrine contains a much-revered seated Buddha, the gallery and the chedis which represented Chiang Mai and Sukhothai styles. Travelers can reach the temple by hiking up the mountain, renting a motorbike, or hopping into a songthaew(red trucks). 
+        Tip: Visiting just before sunset is a special treat.</p>
+      <h2>Mae Ya Waterfall</h2>
+      <p>Waterfalls are considered as the best camping spot amidst a green forest park. There has s 30-storied cliff waterfall is a great place for getting soaked and making your mind and body fresh and has spot of the cliff to get a close view of the water sprinkle.</p>
+    </div>
+    <div class="card">
+      <div class="places">
+        <h3>Doi Inthanon</h3>
+        <img src="/Thailand/img/DoiInthanon.png" alt="" style="width: 300px; height: 250px; border-radius: 12px;">
+        <br>
+        <a href="https://www.google.ca/maps/place/Doi+Inthanon/@18.5880628,98.47674,15z/data=!3m1!4b1!4m6!3m5!1s0x30dbaa9c1c7fd96b:0xf3f01fb3a96c7054!8m2!3d18.5880431!4d98.4870612!16zL20vMDFmMXMx?entry=ttu">Location</a>
+      </div>
+      <div class="places">
+        <h3>Doi AngKhang</h3>
+        <img src="/Thailand/img/DoiAngkhang.png" alt="" style="width: 300px; height: 250px; border-radius: 12px;">
+        <br>
+        <a href="https://www.google.ca/maps/place/Doi+Ang+Khang/@19.8697417,99.0446788,15z/data=!3m1!4b1!4m6!3m5!1s0x30d0cfacf1e64487:0x580102e676e4e485!8m2!3d19.8697222!4d99.055!16s%2Fm%2F0wkwfr_?entry=ttu">Location</a>
+      </div>
+      <div class="places">
+        <h3>Wat Phra That Doi Suthep</h3>
+        <img src="/Thailand/img/Doisuthep.png" alt="" style="width: 300px; height: 250px; border-radius: 12px;">
+        <br>
+        <a href="https://www.google.ca/maps/place/Wat+Phra+That+Doi+Suthep/@18.8049058,98.9180256,17z/data=!4m10!1m2!2m1!1sWat+Phra+That+Doi+Suthep!3m6!1s0x30da39b5dff1ddb5:0x9d864c5caec57e21!8m2!3d18.8049889!4d98.9216337!15sChhXYXQgUGhyYSBUaGF0IERvaSBTdXRoZXBaGiIYd2F0IHBocmEgdGhhdCBkb2kgc3V0aGVwkgEPYnVkZGhpc3RfdGVtcGxl4AEA!16zL20vMGNmd3M2?entry=ttu">Location</a>
+      </div>
+      <div class="places">
+        <h3>Mae Ya Waterfall</h3>
+        <img src="/Thailand/img/waterfall.jpg" alt="" style="width: 300px; height: 250px; border-radius: 12px;">
+        <br>
+        <a href="https://www.google.ca/maps/place/Mae+Ya+Water+Fall/@18.4396776,98.5598844,14z/data=!4m10!1m2!2m1!1sMae+Ya+Waterfall!3m6!1s0x30dbaf43bd171d47:0xcc0c05d6c71c2389!8m2!3d18.4396776!4d98.5979932!15sChBNYWUgWWEgV2F0ZXJmYWxskgESdG91cmlzdF9hdHRyYWN0aW9u4AEA!16s%2Fg%2F11b69czx6t?entry=ttu">Location</a>
+      </div>
+      </div>
+    </div>
+    </div>
+    
+    
+    <div id="CentralVn" class="tabcontent">
+      <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <div class="column">
+      <div class="text-box">
+      <h1>Central of Thailand</h1>
+      <h1>Capital City : Bangkok</h1>
+      <p>Krung Thep Maha Nakhon (Bangkok), occupying most of the Chao Phraya basin, is the political, economic, and cultural core of old Siam and present-day Thailand. Commercial and industrial activity is heavily concentrated in the region, especially in Bangkok, and economic growth has been faster there than elsewhere.</p>
+      <br>
+      <br>
+      <h2>ICONSIAM</h2>
+      <p>There are over 7,000 shops in this 10-story mega lifestyle complex, perched across the renowned Chao Phraya River. Besides shopping and dining, art lovers can also appreciate the art-in-mall journey, with stellar works by over 100 Thai and international artists. </p>
+      <h2>Wat Arun</h2>
+      <p>One of the most iconic and beautiful temples in Thailand. It is the best place to overlook the Chao Phraya River and enjoy the night view. Its stunning towering spire is one of the landmarks of Bangkok.</p>
+      
+      <h2>Bangkok Art and Culture Centre</h2>
+      <p>A major art centre, It is a place for people to meet, and to help define and make culture. It locates at the chosen area of the Pathumwan Junction. Tourists can participate in art and cultural activities, to learn and express themselves, at the same time becoming part of their recreational pursuits.</p>
+      <h2>Yaowarat Road</h2>
+      <p>Every five steps unveil a new food spot, and every single one of them offers amazing different type of foods and hearty spins on the local cuisine. The best part? You can walk through 24 hours night market road.</p>
+    </div>
+    <div class="card">
+    <div class="places">
+      <h3>ICONSIAM</h3>
+      <img src="/Thailand/img/ICONSIAM.jpg" alt="" style="width: 300px; height: 250px; border-radius: 12px;">
+      <br>
+      <a href="https://www.iconsiam.com/th">More information</a>
+    </div>
+    <div class="places">
+      <h3>Wat Arun</h3>
+      <img src="/Thailand/img/wat arun.jpg" alt="" style="width: 300px; height: 250px; border-radius: 12px;">
+      <br>
+      <a href="https://goo.gl/maps/sbh5zkZMzH5HZa1P7">Location</a>
+    </div>
+    <div class="places">
+      <h3>Bangkok Art and Culture Centre</h3>
+      <img src="/Thailand/img/Bangkok Art.jpg" alt="" style="width: 300px; height: 250px; border-radius: 12px;">
+      <br>
+      <a href="https://en.bacc.or.th/">More information</a>
+    </div>
+    <div class="places">
+      <h3>Yaowarat Road</h3>
+      <img src="/Thailand/img/Yaowarat.jpg" alt="" style="width: 300px; height: 250px; border-radius: 12px;">
+      <br>
+      <a href="https://goo.gl/maps/5kqAHTd6mTssf5C39">Location</a>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="SouthernVn" class="tabcontent">
+      <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <div class="column">
+      <div class="text-box">
+      <h1>South of Thailand</h1>
+      <h1>'Krabi'</h1>
+      <p>Krabi is the top three provience of South, charming city of the Andaman Sea. There has more than 130 large and small islands, with white sandy and sparkling water, abundant coral reefs including mangrove forests and caves.</p>
+      <br>
+      <br>
+      <h2>Phi Phi Island</h2>
+      <p>The island is the most famous for tourist destination, a peak of scenery to spectacular provided with accommodations, restaurants and facilities. There have a diving and snorkeling spots which is a paradise for divers.</p>
+      <h2>Railay</h2>
+      <p>Railay Beach has a limestone cliff. There has a viewpoint that is a very beautiful ridge. The highlight is the rock climbing activity.</p>
+      <h2>Thale Waek</h2>
+      <p>Location of beach is combined by three main islands, Koh Mor, Koh Tub and Koh Kai. Tide low is highlight as it will part white sand and water. When the tide is high, it is the best spot for swimming with a different kind of fishes.</p>
+      <h2>Krabi Night Market</h2>
+      <p>Night market is open every Friday to Sunday in evening. There are lots of food local food stalls for travelers.</p>
+    </div>
+    <div class="card">
+      <div class="places">
+        <h3>Phi Phi Island </h3>
+        <img src="/Thailand/img/phiphi.jpg" alt="" style="width: 300px; height: 250px; border-radius: 12px;">
+        <br>
+        <a href="https://www.google.ca/maps/place/Ko+Phi+Phi+Don/@7.7527351,98.7328268,13z/data=!3m1!4b1!4m6!3m5!1s0x3051dee915cc99bb:0x75bea0ddd8e4d014!8m2!3d7.7461158!4d98.77841!16zL20vMDNmZ3hw?entry=ttu">Location</a>
+      </div>
+      <div class="places">
+        <h3>Railay</h3>
+        <img src="/Thailand/img/climbing.jpg" alt="" style="width: 300px; height: 250px; border-radius: 12px;">
+        <br>
+        <a href="https://www.google.ca/maps/place/Railay+Beach/@8.0117454,98.8321395,17z/data=!3m1!4b1!4m6!3m5!1s0x3051ea9e0792e58b:0x61d88bb17c215081!8m2!3d8.011711!4d98.837776!16zL20vMDVfc2R0?entry=ttu">Location</a>
+        
+      </div>
+      <div class="places">
+        <h3>Thale Waek</h3>
+        <img src="/Thailand/img/ThalayWak.jpg" alt="" style="width: 300px; height: 250px; border-radius: 12px;">
+        <br>
+        <a href="https://www.google.ca/maps/place/Thale+Waek/@7.9608178,98.8087322,17z/data=!3m1!4b1!4m6!3m5!1s0x3051c18cffaa28ab:0x21f827ff93a4f895!8m2!3d7.9608125!4d98.8113125!16s%2Fg%2F11hcqlt1t9?entry=ttu">Location</a>
+        
+      </div>
+      <div class="places">
+        <h3>Krabi Night Market</h3>
+        <img src="/Thailand/img/nightmkt.jpg" alt="" style="width: 300px; height: 250px; border-radius: 12px;">
+        <br>
+        <a href="https://www.google.ca/maps/place/Krabi+Night+Market/@8.0652574,98.9137108,17z/data=!3m1!4b1!4m6!3m5!1s0x305194994ca75b83:0x5587e271786ad215!8m2!3d8.0652521!4d98.9162911!16s%2Fg%2F11c3svgdhd?entry=ttu">Location</a>
+      </div>
+      </div>
+    </div>
+      </div>
+    </div>
+    
+    <div class="food-container">
+      <h1 style="color: rgb(58, 176, 141); font-size: 35px;">Thailand is a famous place to go for unique dining experiences.</h1>
+      
+      <h4 style="font-size: 25px;">The 2022 MICHELIN Guide Thailand Features A Total Number Of 361 Dining Establishments, With 6 New One MICHELIN Star Restaurants</h4>
+      <p style="font-size: 17px; text-align: center;">Many restaurents, cafes and bars are recommended for tourists to get a new wonderful experiences. <span id="dots"></span>
+        <br>
+        <a href="https://guide.michelin.com/th/en/article/news-and-views/michelin-guide-thailand-2022">Recommendations</a>
+      <div class="foods">
+      <img src="/group7-main/Thailand/img/1.jpg">
+      <img src="/group7-main/Thailand/img/22.jpg">
+      <img src="/group7-main/Thailand/img/3.jpg">
+      <img src="/group7-main/Thailand/img/4.jpg">
+      <img src="/group7-main/Thailand/img/5.jpg">
+      <img src="/group7-main/Thailand/img/6.jpg">
+     </div>
+    </div>
+    
+    
+    <!--footer-->
+      <footer>
+        <div id="getnewinfo">
+          <h3>Subscribe to get our travel tips and hot deals 
+            <br>
+            <br>
+            <form>
+              <input type="text" placeholder="Your Email Address">
+              <button type="submit">SUBSCRIBE</button>
+            </form>
+          </h3>
+        </div>
+        <p>&copy; 2023 Group 7. All rights reserved.</p>
+        <div class="footer-link">
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookies</a>
+        <a href="#">Complaints</a>
+      </div>
+      </footer>
+    </div>
+    </div>
+      <!-- <script src="VietnamJS.js"></script>   -->
+    </body>
 
 
     <script>
@@ -307,3 +325,4 @@
     document.getElementById("defaultOpen").click();
     </script>
 </html>
+
