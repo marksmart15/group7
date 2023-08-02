@@ -7,40 +7,54 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="/searchbar.css">
   <link rel="stylesheet" href="canada.js">
-</head>
-<body>
-  <header>
-    <nav>
-      <img class="resize1" src="img/canadaflag.png" alt="flag">
-      <h1>Canada</h1>
-      <ul>
-        <div class="navbar">
-          <a href="/main.html">Home</a>
-          <div class="dropdown">
-            <button class="dropbtn">Destinations
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="/Canada/Canada.html">Canada</a>
-              <a href="/Colombia/Colombia.html">Colombia</a>
-              <a href="/Thailand/Thailand.html">Thailand</a>
-              <a href="/Vietnam/Vietnam.html">Vietnam</a>
-            </div>
+
+
+      <header>
+        
+        <div class="logo"><h1>Canada<img class="resize1" src="img/canadaflag.png" alt="flag"></h1></div>  
+<nav class="navbar">
+<!--Navigation links here-->
+<div class="menu">
+        <a href="/main.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Destinations
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../Canada/Canada.html">Canada</a>
+            <a href="../Colombia/Colombia.html">Colombia</a>
+            <a href="../Thailand/Thailand.html">Thailand</a>
+            <a href="../Vietnam/Vietnam.html">Vietnam</a>
           </div>
-          <a href="/About/About.html">About</a>
-          <a href="/form.html">Booking</a>
         </div>
-      </ul>
-    </nav>
-    <div class="icons">
-      <i class="fas fa-search" id="search-btn"></i>
-      <i class="fas fa-user" id="login-btn"></i>
-    </div>
-    <form action="" method="get" class="search-bar-container">
-      <input type="search" id="search-bar" placeholder="search destinations, packages & more">
-    <label for="search-bar" class="fas fa-search"></label>
-    </form>
-  </header>
+    <a href="/form.html">Booking</a>
+        <a href="/About/About.html">About</a>
+        
+      </nav>
+      <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+      </div>
+      <form action="" method="get" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search destinations, packages & more">
+      <label for="search-bar" class="fas fa-search"></label>
+      </form>
+      
+     <!-- <div class="signup">
+        <a href="">Sign Up</a>
+      </div>
+      <div class="search-bar-container">
+        <form action="" method="get" class="search-bar">
+          <input type="text" placeholder="search destinations & more" name="s">
+          <button type="submit"><img src="/img/icon-search.png"></button>
+        </form>
+      </div>
+      -->
+      
+      
+    
+    
+    </header>
 
   <div class="video">
     <video class="embed-item" controls autoplay muted loop id="myVideo">
