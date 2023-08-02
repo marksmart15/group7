@@ -625,7 +625,7 @@ margin-bottom: 20px;
     position: absolute;
     z-index: -1;
     filter: brightness(45%);
-    background-image: url("/group7-main/Thailand/img/bg1.jpg");
+    background-image: url("./img/bg1.jpg");
     background-size: cover;
     background-position: center;
   }
