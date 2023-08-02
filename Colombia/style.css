@@ -181,6 +181,8 @@ body, h1,h2, h3, h4, h5, h6, p, ul, li {
   overflow: hidden;
   background-color: #333;
   font-family: Arial;
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -260,7 +262,7 @@ footer nav ul li a {
 }
 
 .footer-link a{
-  margin: 10px;
+  margin: 7%;
   color: white;
 }
 
