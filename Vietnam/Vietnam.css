@@ -61,18 +61,18 @@ grid-template-areas:
   }
 
   header .navbar a:hover{
-    color: rgb(64, 255, 0);
+    color: rgb(84, 218, 241);
   }
-  /* body section start */
-header .icons i{
+  /* body section startheader .icons i{
   font-size: 1.35rem;
   color: #fff;
   cursor: pointer;
   margin-right: 2rem;
 }
 header .icons i:hover{
-  color:rgb(64, 255, 0) ;
+  color:rgb(84, 218, 241) ;
 }
+
 
 header .search-bar-container {
   position: absolute;
@@ -103,9 +103,103 @@ header .search-bar-container label{
   color: #fff;
   cursor: pointer;
   font-size: 3rem;
-  margin-left: 1.5rem;
+  margin-left: 1.5rem; */
+
+}
+/*LOGIN FORM CONTAINER STARTS .login-form-container{
+  position: fixed;
+  top: -120%; left: 0;
+  z-index: 10000;
+  width: 100%;
+  background: rgba(0,0,0,.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.login-form-container .active{
+  top:0;
+}
+
+.login-form-container form {
+  margin: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: .5rem;
+  background: #fff;
+  width: 50rem;
+}
+
+.login-form-container h3{
+  font-size: 3rem;
+  color: #444;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.login-form-container form .login-box {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: #333;
+  margin: .6rem 0;
+  border: 1rem solid rgba(0,0,0,.3);
+  text-transform: none;
+}
+
+.login-form-container form #remember{
+  margin: 2rem 0;
+}
+
+.login-form-container form label {
+font-size: 1.5rem;
+}
+
+.login-submit-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: rgba(89, 174, 118, 0.5);
+  color: #fff;
+  padding: .8rem 3rem;
+  border: .2rem solid rgba(89, 174, 118, 0.5);
+  cursor: pointer;
+  font-size: 1.7rem; }
+
+
+  .login-submit-btn:hover{
+    background: rgba(255,165,0,0.2);
+    color: rgba(89, 174, 118, 0.5);
+  }
+
+  .login-form-container form .login-submit-btn{
+    display: block;
+    width: 100%;
+  }
+
+  .login-form-container form p {
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: #666;
+
+  }
+
+  .login-form-container form p a{
+    color: var(--blue);
+  }
+
+  .login-form-container form p a:hover{
+    color: #333;
+    text-decoration: underline;
+  }
+
+.login-form-container #form-close{
+  position: relative;
+  
+}
+*/
+
+
+/*VIDEO CONTAINER STARTS */
 .video-container {
   grid-area: video;
   margin-bottom: 20px;
@@ -115,7 +209,9 @@ header .search-bar-container label{
     width: 100%;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
 }
-
+.video-container h1, h2 {
+  text-align: center;
+}
 /* .video-container iframe {
     position: absolute;
     top: 0;
@@ -151,10 +247,11 @@ header .search-bar-container label{
   display: grid;
   
   grid-template-areas: "map table";
-  width: 80%;
+  width: 90%;
+  margin-top: 1PX;
  
 margin: 0 auto;
-margin-bottom: 10vh;
+margin-bottom: 5vh;
 } 
 /* Map section start */
 .map-container{
@@ -162,7 +259,7 @@ margin-bottom: 10vh;
   grid-area: map;
   margin-left: 20px;
   margin-right: 20px; /* Add margin to the right to create space between elements */
-
+margin-top: 40px;
 }
 .map-container iframe{
   width: 400px;
@@ -481,6 +578,7 @@ margin-bottom: 5px;
   color: rgb(211, 52, 12);
   font-weight: bold;
   background-color: #fff;
+  padding: 20px 22px;
 }
 
 .food-container #myBtn:hover {
@@ -493,6 +591,7 @@ margin-bottom: 5px;
     background-color: #333;
     padding: 20px;
     text-align: center;
+    color: white;
   }
   
   footer nav ul li {
@@ -523,7 +622,8 @@ margin-bottom: 5px;
   }
   .footer-link a{
     text-decoration: none;
-    
+    margin: 10px;
+    color: white;
     font-size: 15px;
     font-weight: bold;
 
