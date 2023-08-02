@@ -347,3 +347,12 @@ nav:after {
   display: table;
   clear: both;
 }
+
+@media (max-width: 968px) {
+  table,
+  iframe {
+    background-color: green;
+    width: 100%; /* Set width to 100% on smaller screens */
+    display:contents;
+   }
+}
