@@ -33,14 +33,21 @@ grid-template-areas:
     grid-area: header;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    
     padding: 20px;
+  }
+  .navbar{
+  flex: 1;
+  padding: 0 ;
+  margin: 0;
+  margin-right: 20em;
   }
   
   header .logo {
     font-size: 20px;
     font-weight: bolder;
     transform: uppercase;
+    flex: 1;
   }
   header nav ul {
     list-style: none;
@@ -61,8 +68,50 @@ grid-template-areas:
   }
 
   header .navbar a:hover{
-    color: rgb(84, 218, 241);
+    color: rgb(64, 255, 0);
   }
+  /* body section start */
+header .icons i{
+  font-size: 1.35rem;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+header .icons i:hover{
+  color:rgb(64, 255, 0) ;
+}
+
+header .search-bar-container {
+  position: absolute;
+  top:100%; left: 0; right: 0;
+  padding: 1.5rem 2rem;
+  background: #333;
+  border-top: .1rem solid rgba(255, 255, 255, .2);
+  display: flex;
+  align-items: center;
+  z-index: 1001;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+header .search-bar-container .active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+header .search-bar-container #search-bar {
+  width: 100%;
+  padding: 1rem;
+  text-transform: none;
+  color: #333;
+  font-size: 1.7rem;
+  border-radius: .5rem;
+}
+
+header .search-bar-container label{
+  color: #fff;
+  cursor: pointer;
+  font-size: 3rem;
+  margin-left: 1.5rem;
+}
   /* body section startheader .icons i{
   font-size: 1.35rem;
   color: #fff;
