@@ -61,6 +61,13 @@
     text-align: center;
   }
   
+  .footer-link{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+
   footer nav ul li {
     display: inline;
     margin-right: 10px;
@@ -197,18 +204,21 @@ video::-webkit-media-controls {
   color: white;
 }
 
-#Canada{
-}
-
 #canadainfo{
+  display: flex;
+  justify-content: space-around; /* Spread out elements evenly */
+  align-items: center; /* Center elements vertically */
+}
+.glance{
+  align-items: center;
+  grid-area: table;
+  padding-top: 40px;
+  margin-right: 20px;
 
 }
 
-.glance{
-grid-area: table;
-padding-top: 40px;
-margin-right: 20px;
-
+.glance h1{
+  text-align: center;
 }
 .glance caption{
   font-size:30px;
@@ -317,9 +327,8 @@ header .search-bar-container label{
 }
 
 table {
-  width: 50%;
+  width: 60%;
   padding: 40px;
-  padding-left: 40px;
   float: left; /* Float the table to the left */
   margin-right: 20px; /* Add some margin between the table and iframes */
 }
