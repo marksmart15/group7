@@ -198,7 +198,33 @@ video::-webkit-media-controls {
 }
 
 #Canada{
-  display: none;
+}
+
+#canadainfo{
+
+}
+
+.glance{
+grid-area: table;
+padding-top: 40px;
+margin-right: 20px;
+
+}
+.glance caption{
+  font-size:30px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  
+}
+.glance table, th, td{
+  background-color: rgb(233, 203, 133);
+ /* background-color: rgb(154, 198, 240);*/
+  padding: 20px;
+  
+}
+.glance table td{
+  text-align: center;
 }
 
 #Falls{
@@ -288,4 +314,27 @@ header .search-bar-container label{
   cursor: pointer;
   font-size: 3rem;
   margin-left: 1.5rem;
+}
+
+table {
+  width: 50%;
+  padding: 40px;
+  padding-left: 40px;
+  float: left; /* Float the table to the left */
+  margin-right: 20px; /* Add some margin between the table and iframes */
+}
+
+/* Style for the iframes */
+iframe {
+  margin: 20px;
+  float: left; /* Float the iframes to the left */
+  width: 600px; /* Set the width of the iframes */
+  height: 450px; /* Set the height of the iframes */
+  margin-bottom: 20px; /* Add some margin at the bottom of the iframes */
+  border: 0; /* Remove the iframe border */
+}
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
 }
