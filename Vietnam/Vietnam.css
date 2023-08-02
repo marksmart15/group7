@@ -162,7 +162,7 @@ margin-bottom: 10vh;
   grid-area: map;
   margin-left: 20px;
   margin-right: 20px; /* Add margin to the right to create space between elements */
-
+  margin-top: 40px;
 }
 .map-container iframe{
   width: 400px;
@@ -481,6 +481,7 @@ margin-bottom: 5px;
   color: rgb(211, 52, 12);
   font-weight: bold;
   background-color: #fff;
+  
 }
 
 .food-container #myBtn:hover {
