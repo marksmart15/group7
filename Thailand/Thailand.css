@@ -1,19 +1,46 @@
 *{
-    margin: 0;
-    border: 0;
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
 }
+body{
+margin:0;
+padding:0;
+}
+.container{
+width: 100%;
+height: 100vh;
+display: grid;
+grid-template-areas: 
+      "header header"
+     
+      "video video"
+      "group-1 group-1"
+      "group-2 group-2"
+      "food food"
+      "footer footer";
 
-  
+}
   header {
-    background-color: #333;
-    /* background-image: url(img/airplane.jpg);
-    background-position: center;
-    background-size: 100%; */
-    color: white;
-    padding: 10px;
-    height: 13vh;
+  background-color: #333;
+    color: #fff;
+    z-index: 1000;
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
   }
   
+  header .logo {
+    font-size: 20px;
+    font-weight: bolder;
+    transform: uppercase;
+  }
   header nav ul {
     list-style: none;
   }
@@ -24,11 +51,454 @@
   }
   
   header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: all .2s linear;
+    margin: 0 .8rem;
+    font-size: 2rem;
     
-    color: white;
+  }
+
+  header .navbar a:hover{
+    color: rgb(64, 255, 0);
+  }
+  /* body section start */
+header .icons i{
+  font-size: 1.35rem;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+header .icons i:hover{
+  color:rgb(64, 255, 0) ;
+}
+
+header .search-bar-container {
+  position: absolute;
+  top:100%; left: 0; right: 0;
+  padding: 1.5rem 2rem;
+  background: #333;
+  border-top: .1rem solid rgba(255, 255, 255, .2);
+  display: flex;
+  align-items: center;
+  z-index: 1001;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+header .search-bar-container .active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+header .search-bar-container #search-bar {
+  width: 100%;
+  padding: 1rem;
+  text-transform: none;
+  color: #333;
+  font-size: 1.7rem;
+  border-radius: .5rem;
+}
+
+header .search-bar-container label{
+  color: #fff;
+  cursor: pointer;
+  font-size: 3rem;
+  margin-left: 1.5rem;
+}
+
+.video-container {
+  grid-area: video;
+  margin-bottom: 20px;
+}
+
+
+
+.embed {
+
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+  width: 100%;
+}
+
+.embed-16-9 {
+  padding-top: 56.25%;
+}
+
+.embed-item {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+
+
+
+
+.map-glance-container{
+  grid-area: group-1;
+  display: grid;
+  
+  grid-template-areas: "map table";
+  width: 90%;
+ 
+margin-top: 1px;
+margin: 0 auto;
+margin-bottom: 5vh;
+/* border: red solid;   */
+} 
+/* Map section start */
+.map-container{
+  grid-gap: 20px;
+  grid-area: map;
+  margin-left: 20px;
+  margin-right: 20px; /* Add margin to the right to create space between elements */
+  margin-top: 40px;
+  /* border: red solid;  */
+
+}
+.map-container iframe{
+  width: 400px;
+  height: 45vh;
+}
+.map-container h3{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  }
+/* Map section end */
+
+
+
+/* Thai at a glance start*/
+.glance{
+  grid-area: table;
+padding-top: 40px;
+margin-right: 20px;
+
+}
+.glance caption{
+  font-size:30px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  
+}
+.glance table, th, td{
+  background-color: rgb(233, 203, 133);
+ /* background-color: rgb(154, 198, 240);*/
+  padding: 20px;
+  
+}
+.glance table td{
+  text-align: center;
+}
+/* Thai at a glance end*/
+
+
+
+
+/* TAB button hover */
+.tab button {
+  background-color: burlywood; /* inherit*/
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #f7941b;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+ /* border: 1px solid #ccc; */
+  border-top: none;
+}
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full o23pacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+/* THE TAB ENDS */
+
+
+
+
+
+/* CONTAINER & BACKGROUND START */
+.tabcontainer {
+  grid-area: group-2;
+  height: 120vh;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.bg::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+ /* 
+  filter: brightness(46%);
+   background-image:  linear-gradient((rgba (0,0,0,0.6), rgb(0,0,0,0.3)), url('img/background.jpg')) ; */
+ 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('img/background.jpg');
+  
+  background-size: cover;
+  background-position: center;
+}
+ /* Style the close button */
+  .topright {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+  }
+  .topright:hover {color: red;}
+
+  .tabcontainer .tab{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    
+    padding: 10px 20px;
+  }
+              /* End Style tab */
+/* CONTAINER & BACKGROUND END */
+
+
+
+
+
+
+/* MODYFING THE TEXT & IMAGES OF PLACES IN TABCONTENT START*/
+.column{
+display: flex;
+justify-content: space-around;
+align-items: flex-start;
+}
+
+.text-box h1, h2, p {
+  color: white;
+  margin-top: 20px;
+}
+
+.text-box h1{
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 35px;
+}
+
+.text-box h2{
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.text-box p{
+  font-size: 18px;
+  text-align: left;
+  color: rgb(240, 234, 234);
+}
+
+.text-box{
+  flex: 1;
+  margin: 10px;
+  width: 10%;
+  /* border: solid red; */
+  /* border: solid red; */
+}
+
+.card {
+  flex: 1;
+  margin: 10px;
+  /* border: solid red;  */
+  margin-left: 80px;
+}
+.card {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  justify-content: space-evenly; /* Distribute items evenly in each row */
+}
+
+.places {
+  flex-basis: calc(50% - 20px); /* Each item takes 50% of the container width minus the margin */
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ /* display: inline;
+  border-radius: 12px;
+  text-align: center; */
+  
+}
+
+.places img {
+  width: 300px;
+  height: 250px;
+  border-radius: 12px;
+ /* margin-bottom: 10px; /* Add some spacing between the image and the caption */
+}
+
+.places a {
+text-decoration: none;
+color: rgb(222, 125, 15);
+font-weight: bold;
+font-size: 17px;
+border-radius: 12px;
+background-color: #fff;
+padding: 12px 25px;
+}
+
+.places a:hover {
+  background-color: #000;
+  letter-spacing: 3px;
+  transition: 0.9s;
+}
+
+.places h3 {
+  color: rgb(225, 114, 9);
+  font-size: 20px;
+  letter-spacing: 2px;
+  border-radius: 3px;
+  margin-bottom: 5px; /* Add space between h3 and the image */
+  padding: 10px 10px;
+  background-color: black;
+}
+
+
+
+
+
+/*FOOD CONTAINER start*/
+.food-container{
+  grid-area: food;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 30px;
+ margin-bottom: 50px;
+}
+.food-container h1, h4, p {
+  text-align: center;
+margin-bottom: 20px;
+
+}
+.food-container .foods {
+  display: flex;
+ width: 60%;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-items: center;
+ margin: 0 auto;
+ 
+}
+.food-container img{
+  display: flex; /*using flex to make images at the center of the body */
+  flex-wrap: wrap;
+  margin: 10px;
+  width: 230px;
+  /*width:230px;*/
+  height: 250px;
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
+.food-container p{
+  color: black;
+  text-align: center;
+  width: 50%;
+  margin: auto 0; 
+}
+/*Food tours section end*/
+
+
+
+
+  footer {
+    grid-area: footer;
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+  }
+
+  footer h3{
+    color: rgb(247, 212, 212);
+  }
+  
+  footer nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  footer nav ul li a {
+    color: #333;
     text-decoration: none;
   }
-  .navbar {
+
+  footer button{
+    border-radius: 40px;
+    background-color: #fff;
+  }
+
+  footer button:hover{
+    letter-spacing: 2px;
+    transition: 0.5s;
+
+  }
+  .footer-link{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer-link a{
+    text-decoration: none;
+    
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(247, 212, 212);
+
+  }
+  /* everything below this is for navagation on the top of display, home, destionation, and about */
+
+.navbar {
   overflow: hidden;
   background-color: #333;
   font-family: Arial;
@@ -93,121 +563,10 @@
   display: block;
 }
 
-
-/* VDO */
-.video{
-    background-color: #377b94;
-}
-#myVideo {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    z-index: -100;
-  }
-  audio::-webkit-media-controls-timeline,
-  video::-webkit-media-controls-timeline {
-      display: none;
-  }
-  audio::-webkit-media-controls,
-  video::-webkit-media-controls {
-      display: none;
-  }
-/* End VDO */
-
-
-/* Welcome to Thailand */
-  .blurred-box{
-    background-image: url(/Thailand/img/blurbox.jpg);
-    /* border: 2px red solid; */
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    justify-items: center;
-}
-
-.Welcome h1{
-    color: rgb(82, 33, 33);
-    font-size: 45px;
-    font-weight: 1000;
-    text-shadow: 3px 10px 10px rgb(163, 109, 109);
-    text-align: center;
-    margin-top: 5px;
-    padding: 5px;
-}
-.Welcome p{
-    /* border: 2px red solid; */
-    font-size: 20px;
-    font-weight: 1000;
-    text-shadow: 3px 3px 3px rgb(163, 109, 109);
-    text-align: center;
-    color: #333;
-}
-/* End welcome Thaoland */
+/* this is the end of the navagation */
 
 
 
-/* contain */
-.contain{
-    margin: 0 auto;
-    height: 30%;
-    text-align: center;
-    justify-items: center;
-    max-width: 75%;
-    /* border: 2px red solid; */
-}
-.content{
-    margin: 1em;
-    display: grid;
-    grid-template-columns: 500px 1fr;
-    gap: 1em;
-}
-.content_left{
-    width: 90%;
-}
-.content_right{
-    /* border: 2px red solid; */
-    padding: 0.5em 0;
-    width: 100%;
-    color: #333;
-    text-align: left;
-    justify-content: center;
-}
-.content_right h1{
-    margin-bottom: .5em;
-}
-.content_right p{
-    margin-bottom: 1em;
-}
-
-
-
-
-
-
-
-
-
-
-
-            /* Style the tab */
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #4f4f4f;
-  }
-  
-  /* Style the buttons inside the tab */
-  .tab button {
-    background-color: inherit;
-    float: center;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 20px;
-  }
-  
   /* Change background color of buttons on hover */
   .tab button:hover {
     background-color: #ddd;
@@ -239,14 +598,14 @@
 
 
 
-
-
   /* container & background */
-  .container {
+  .tabcontainer {
+    grid-area:group-2;
     min-height: 120vh;
     padding-bottom: 50px;
     margin: 0 auto;
     position: relative;
+    
   }
   .bg {
     position: relative;
@@ -262,7 +621,7 @@
     position: absolute;
     z-index: -1;
     filter: brightness(45%);
-    background-image: url("/Thailand/img/bg1.jpg");
+    background-image: url("/group7-main/Thailand/img/bg1.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -274,58 +633,7 @@
 
 
 
-/* box, card & Krabi */
-  .box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    align-items: center;
-  }
-  .Krabi {
-    border: 2px red solid;
-    color: #fff;
-    padding: 80px;
-  }
-  .card {
-    border: 2px red solid;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 30px;
-  }
-  .card h2 {
-    color: #fff;
-    position: absolute;
-    bottom: 15px;
-    left: 20px;
-    font-size: 1.6rem;
-    letter-spacing: 1px;
-  }
-  .card .box1,.box2,.box3,.box4 {
-    width: 90%;
-    height: 400px;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    border-radius: 25px;
-    cursor: pointer;
-  }
-  .box1 {
-    background-image: url("/Thailand/img/phiphi.jpg");
-  }
-  .box2 {
-    background-image: url("/Thailand/img/climbing.jpg");
-  }
-  .box3 {
-    background-image: url("/Thailand/img/ThalayWak.jpg");
-  }
-  .box4 {
-    background-image: url("/Thailand/img/nightmkt.jpg");
-  }
+
   .Krabi h2 {
     font-size: 2rem;
     letter-spacing: 2.8px;
@@ -352,79 +660,6 @@
     transform: translateY(-10px);
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   }
-
-  /* North Thailand */
-  .ChiangMai {
-    border: 2px red solid;
-    color: #fff;
-    padding: 80px;
-  }
-  .card .box5,.box6,.box7,.box8 {
-    width: 90%;
-    height: 400px;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    border-radius: 25px;
-    cursor: pointer;
-  }
-  .box5 {
-    background-image: url("/Thailand/img/DoiInthanon.png");
-  }
-  .box6 {
-    background-image: url("/Thailand/img/DoiAngkhang.png");
-  }
-  .box7 {
-    background-image: url("/Thailand/img/Doisuthep.png");
-  }
-  .box8 {
-    background-image: url("/Thailand/img/waterfall.jpg");
-  }
-  .ChiangMai h2 {
-    font-size: 2rem;
-    letter-spacing: 2.8px;
-  }
-  .ChiangMai p {
-    opacity: 0.6;
-  }
-/* End of North Thailand */
-
-/* Central */
-.Bangkok {
-  border: 2px red solid;
-  color: #fff;
-  padding: 80px;
-}
-.card .box9,.box10,.box11,.box12 {
-  width: 90%;
-  height: 400px;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  border-radius: 25px;
-  cursor: pointer;
-}
-.box9 {
-  background-image: url("/Thailand/img/DoiInthanon.png");
-}
-.box10 {
-  background-image: url("/Thailand/img/DoiAngkhang.png");
-}
-.box11 {
-  background-image: url("/Thailand/img/Doisuthep.png");
-}
-.box12 {
-  background-image: url("/Thailand/img/waterfall.jpg");
-}
-.Bangkok h2 {
-  font-size: 2rem;
-  letter-spacing: 2.8px;
-}
-.Bangkok p {
-  opacity: 0.6;
-}
-/* End of Central */
-
 
 
 
