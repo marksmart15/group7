@@ -24,6 +24,10 @@ body, h1,h2, h3, h4, h5, h6, p, ul, li {
     /*position: relative;*/ 
     overflow: hidden;   
   }
+
+header .navbar a:hover{
+    color: rgb(64, 255, 0);
+  }
   .video-col {
     width: 100%;
     height: 100%;
