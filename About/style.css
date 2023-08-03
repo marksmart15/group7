@@ -64,7 +64,7 @@ h2 {
 /*SERVICES OFFERED START*/
 
 #services {
-  background-image: linear-gradient(rgba(10, 36, 13, 0.8), rgba(46, 147, 169, 0.5)), url('../img/AboutBackground.jpg');
+  background-image: linear-gradient(rgba(10, 36, 13, 0.8), rgba(46, 147, 169, 0.5)), url('../About/AboutBackground.jpg');
 
   background-position: center;
   background-size: cover;
