@@ -745,3 +745,17 @@ margin-bottom: 5px;
 }
 
 /* this is the end of the navagation */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  margin-left: -5px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c4c3c3;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #4f4f4f;
+}

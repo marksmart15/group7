@@ -665,7 +665,20 @@ margin-bottom: 20px;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   }
 
-
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    margin-left: -5px; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #c4c3c3;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #4f4f4f;
+  }
 
 
 
