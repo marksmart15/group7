@@ -140,9 +140,16 @@ header nav ul {
   }
   
   header nav ul li a {
-    
-    color: white;
+    color: #fff;
     text-decoration: none;
+    transition: all .2s linear;
+    margin: 0 .8rem;
+    font-size: 2rem;
+    
+  }
+
+  header .navbar a:hover{
+    color: rgb(64, 255, 0);
   }
 
   .navbar {
@@ -231,6 +238,8 @@ header nav ul {
   .footer-link a{
     margin: 10px;
     color: white;
+     font-weight: bold;
+    text-decoration: none;
   }
   #formsubmit{
     background-color: #4f4f4f;
