@@ -1,41 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lora:ital@0;1&family=Nunito:wght@200;300;400;600;700&display=swap');
 body, h1, h2, h3, h4, h5, h6, p, ul, li {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-}
-
-header {
-  background-color: #333;
-  /* background-image: url(img/airplane.jpg);
-  background-position: center;
-  background-size: 100%; */
-  color: white;
-  padding: 20px;
-}
-
-header nav ul {
-  list-style: none;
-}
-
-header nav ul li {
-  display: inline;
-  margin-right: 10px;
-}
-
-header nav ul li a {
+    margin: 0;
+    padding: 0;
+  }
+  *{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    line-height: 1.6;
+  }
+  /*HEADER*/
+  header {
+    background-color: #333;
+      color: #fff;
+     
+    }
   
-  color: white;
-  text-decoration: none;
-}
-
-h1 {
-  font-size: 50px;
-  margin-bottom: 20px;
-}
+  header nav ul {
+    list-style: none;
+    
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  header nav ul li a {
+    
+    color: white;
+    text-decoration: none;
+    transition: all .2s linear;
+    margin: 0 .8rem;
+    font-size: 2rem;
+  }
+  
+  header .navbar a:hover{
+    color: rgb(64, 255, 0);
+  }
+  
+  h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
 
 section {
   padding: 20px;
@@ -49,7 +61,87 @@ h2 {
 
 
 
+/*SERVICES OFFERED START*/
 
+#services {
+  background-image: linear-gradient(rgba(10, 36, 13, 0.8), rgba(46, 147, 169, 0.5)), url('../img/AboutBackground.jpg');
+
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  
+}
+
+.services-row{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.services-item
+{margin: 0;}
+
+.services-item{
+  text-align: center;
+  padding: 2rem 0.5rem;
+  margin: 2rem 0;
+}
+
+.services-icon {
+font-size: 3.2rem;
+}
+
+.services-item h3{
+  margin: 1rem 0;
+  font-size: 1.6rem;
+
+}
+
+.services-item .btn{
+  margin-top: 1.6rem;
+  display: inline-block;
+}
+.py-4{
+  padding: 4rem 0;
+}
+.title-wrap{
+  text-align: center;
+  padding:1.4rem 0;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.lg-title{
+  font-size: 1.8rem;
+
+}
+
+.sm-title{
+  display: block;
+  color:#e0dada;
+  font-weight: 300;
+  font-size: 1.2rem;
+  padding-bottom:1rem;
+  max-width: 470px;
+  margin-right: auto;
+  margin-left:auto;
+  line-height: 1.7;
+}
+
+.btn{
+  padding: 0.7rem 2.4rem;
+  border-radius: 0.2rem;
+  font-weight: 600;
+  background-color: rgb(43, 208, 178);
+  color:#fff;
+  border: 1px solid rgb(43, 208, 178);
+
+}
+
+.btn:hover{
+  opacity: 0.9;
+  transition: var(--trans);}
 
 
 
@@ -101,127 +193,148 @@ h2 {
 /* End flag */
 
 
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
+/*FOOTER*/
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-link{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-footer nav ul li {
-  display: inline;
-  margin-right: 10px;
-}
+  footer nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  footer nav ul li a {
+    color: #333;
+  }
+  
+  h3 {
+    text-align: center;
+  }
+  section{
+    display: flex;
+  }
 
-footer nav ul li a {
-  color: #333;
-  text-decoration: none;
-}
+  .facts {
+    overflow: hidden;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px 2px rgba(0,23,85,.3);
+    background-color: lightgrey;
+  }
 
-h3 {
-  text-align: center;
-}
-section{
-  display: flex;
-}
-
-.facts {
-  overflow: hidden;
-  margin: 20px;
-  border-radius: 15px;
-  box-shadow: 0px 4px 4px 2px rgba(0,23,85,.3);
-  background-color: lightgrey;
-}
-
-img.resize {
-  max-width: 100%;
-  max-height:100%;
-}
-img.resize1{
-  float: left;
-  padding: 11px;
-  height: 60px;
-}
+  img.resize {
+    max-width: 100%;
+    max-height:100%;
+  }
+  img.resize1{
+    float: left;
+    padding: 11px;
+    height: 60px;
+  }
 
 ::-webkit-scrollbar {
-width: 10px;
-height: 10px;
-margin-left: -5px; 
+  width: 10px;
+  height: 10px;
+  margin-left: -5px; 
 }
 
 ::-webkit-scrollbar-thumb {
-background-color: #c4c3c3;
-border-radius: 5px;
+  background-color: #c4c3c3;
+  border-radius: 5px;
 }
 
 ::-webkit-scrollbar-track {
-background-color: #4f4f4f;
+  background-color: #4f4f4f;
 }
 
 .navbar {
-overflow: hidden;
-background-color: #333;
-font-family: Arial;
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  
 }
 
 
 .navbar a {
-float: left;
-font-size: 16px;
-color: white;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 
 .dropdown {
-float: left;
-overflow: hidden;
+  float: left;
+  overflow: hidden;
 }
 
 .dropdown .dropbtn {
-font-size: 16px;
-border: none;
-outline: none;
-color: white;
-padding: 17px 16px;
-background-color: inherit;
-font-family: inherit; 
-margin: 0; 
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 17px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-overflow: hidden;
-border-radius: 5px;
-background-color: #4f4f4f;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #4f4f4f;
 }
 
 .dropdown-content {
-display: none;
-position: absolute;
-background-color: #f9f9f9;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
 .dropdown-content a {
-float: none;
-color: black;
-padding: 12px 16px;
-text-decoration: none;
-display: block;
-text-align: left;
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
 .dropdown-content a:hover {
-background-color: #ddd;
+  background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
-display: block;
+  display: block;
 }
+
+
+audio::-webkit-media-controls-timeline,
+video::-webkit-media-controls-timeline {
+    display: none;
+}
+audio::-webkit-media-controls,
+video::-webkit-media-controls {
+    display: none;
+}
+
+
 
 #myVideo {
 width: 100%;
