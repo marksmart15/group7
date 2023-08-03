@@ -1,17 +1,4 @@
-  let searchBtn = document.querySelector('#search-btn');
-  let searchBar = document.querySelector('.search-bar-container');
-  
-  window.onscroll = () =>{
-    searchBtn.classList.remove('fa-times');
-    searchBtn.classList.remove('active');
-  };
 
-
-  searchBtn.addEventListener('click', () => {
-    searchBtn.classList.toggle('fa-times');
-    searchBtn.classList.toggle('active');
-  });
-     
      
      // Read more function starts
 // https://www.w3schools.com/howto/howto_js_read_more.asp
