@@ -390,6 +390,8 @@ footer nav ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center; 
+    font-size: 12px;
+    
 
   }
   .dropdown {
@@ -398,6 +400,7 @@ footer nav ul li a {
     align-items: center; 
     overflow: hidden;
     width: 20%;
+    font-size: 12px;
 
   }
   h1{
@@ -407,6 +410,24 @@ footer nav ul li a {
     margin-right: 0%;
     font-size: 6vw;
     width: 28%;
+  }
+  header nav ul li {
+    display:none;
+    margin-right: 10px;
+ 
+  }
+  a{
+    font-size: 12px;
+
+  }
+  .navbar a {
+ 
+    font-size: 12px;
+
+  }
+  .dropdown .dropbtn {
+    font-size: 12px;
+
   }
 
 
