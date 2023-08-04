@@ -55,18 +55,20 @@
         </select>
 
         <h3>Plan</h3>
-				<label for="basic" id="radio">
-                    <input type="radio" name="choose" value="Basic" onclick="Value()" checked id="choose">Basic
+        <div class="plan">
+				        <label for="Basic" id="radio">
+                  <input type="radio" name="choose" value="Basic" onclick="Value()" checked id="choose">Basic
                 </label>
-                <label for="basic" id="radio">
-				    <input type="radio" name="choose" value="Medium" onclick="Value()" id="choose">Medium
+                <label for="Medium" id="radio">
+				          <input type="radio" name="choose" value="Medium" onclick="Value()" id="choose">Medium
                 </label>
-                <label for="basic" id="radio">
-                <input type="radio" name="choose" value="Premium" onclick="Value()" id="choose">Premium
+                <label for="Premium" id="radio">
+                  <input type="radio" name="choose" value="Premium" onclick="Value()" id="choose">Premium
                 </label>
-                <label for="basic" id="radio">
-                    <input type="radio" name="choose" value="Deluxe" onclick="Value()" id="choose">Deluxe
+                <label for="Deluxe" id="radio">
+                  <input type="radio" name="choose" value="Deluxe" onclick="Value()" id="choose">Deluxe
                 </label>
+        </div>
                 <p class="titlecost">The cost of your travel will be:</p>
                 <p id="change_value">....</p>
                     <table id="tabla">
@@ -89,7 +91,7 @@
 
 
 
-        <input type="button" value="Add" onclick="agregarPersona()">
+        <input id="buttonadd" type="button" value="Add" onclick="agregarPersona()">
     </form>
     <footer>
         <div id="getnewinfo">

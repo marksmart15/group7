@@ -16,12 +16,12 @@ h1 {
     text-align: center;
     color: white;
 
-    width: 800px;
+    width: 60%;
     padding: 1%;
 }
 
 form {
-    width: 800px;
+    width: 60%;
     margin: auto;
     background: gray;
     padding: 10px;
@@ -123,7 +123,7 @@ header {
     /*background-size: 100%;*/
     color: white;
     padding: 10px;
-    width: 800px;
+    width: 60%;
 
 
     background-size: cover;
@@ -222,7 +222,7 @@ header nav ul {
     color: #fff;
     padding: 10px;
     text-align: center;
-    width: 800px;
+    width: 60%;
   }
   
   footer nav ul li {
@@ -246,7 +246,7 @@ header nav ul {
     color: #fff;
     padding: 1px;
     text-align: center;
-    width: 800px;
+    width: 60%;
 
   }
 
@@ -266,4 +266,95 @@ header nav ul {
   ::-webkit-scrollbar-track {
     background-color: #4f4f4f;
   }
+  @media (max-width: 968px) {
+  
+  
+     table{
+      border-collapse:separate;
+    
+     }
+    .navbar {
+  
+      display: flex;
+      font-size: 12px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+      
+  
+    }
+    .dropdown {
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      overflow: hidden;
+      width: 100%;
+      font-size: 12px;
+  
+    }
+    h1{
+      float: left;
+      padding-top: 7%;
+      padding-right: 0;
+      margin-right: 0%;
+      font-size: 3vw;
+      width: 25%;
+    }
+   
+    a{
+      font-size: 12px;
+  
+    }
+    .navbar a {
+   
+      font-size: 12px;
+
+  
+    }
+    .dropdown .dropbtn {
+      font-size: 12px;
+  
+    }
+
+    table {
+      width: 100%;
+      margin: 1% auto;
+      border-collapse: collapse;
+      border: 1px solid #ccc;
+  }
+  
+  th {
+      background-color: black;
+      color: #fff;
+      text-align: left;
+      font-size:1.5vh;
+      padding: 0.5%;
+  }
+  .plan{
+    display: flex;
+     
+    align-items:start; 
+   
+    flex-direction: column; 
+    
+
+  }
+  #radio{
+    font-size: 13px;   
+  }
+  input[type="button"] {
+
+    padding: 10px 20px;
+    font-size: 2vw;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); /* Sombras */
+    transform: translateY(-2px)  
+  
+  }
+  footer{
+    font-size: 12px;
+  }
+  }
+  
 
