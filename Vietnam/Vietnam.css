@@ -759,3 +759,35 @@ margin-bottom: 5px;
 ::-webkit-scrollbar-track {
   background-color: #4f4f4f;
 }
+
+
+
+/* Media query for screens smaller than 600px (for phones) */
+@media screen and (max-width: 599px) {
+  /* Styles for small screens */
+.container{
+  grid-template-areas: 
+  "header"
+  "video"
+  "group-1"
+  "group-2"
+  "food"
+  "footer";
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.tab .tablinks {
+  margin: 10px;
+}
+
+.map-glance-container {
+  grid-template-areas: 
+  "map"
+  "table";
+}
+}
