@@ -351,3 +351,24 @@ audio::-webkit-media-controls,
 video::-webkit-media-controls {
   display: none;
 }
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header nav ul li {
+    margin: 10px 0;
+  }
+
+}
+
+/* Media query for screens with a maximum width of 1200px */
+@media (max-width: 1400px) {
+  /* Adjust styles for screens with medium width */
+  .services-row 
+  {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
