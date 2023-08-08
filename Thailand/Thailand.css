@@ -684,6 +684,61 @@ margin-bottom: 20px;
 
 
 
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  /* Adjust the styles for this screen range */
+
+  /* Header styles */
+  .navbar {
+    flex-direction: column;
+  }
+
+  /* Adjust navigation links and dropdown */
+
+  .dropdown-content a {
+    padding: 10px;
+  }
+
+  /* Video container styles */
+  .video-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .tablinks {
+    font-size: 16px;
+    padding: 8px 16px;
+    flex-direction: row;
+  }
+  
+  /* Adjust column layout for tab content */
+  .column {
+    flex-direction: column;
+  }
+
+.card{
+  flex-direction: row;
+}
+
+.bg{
+  height: 300vh;
+  flex-direction: row;
+
+}
+  /* Footer styles */
+  footer {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-link {
+    margin-top: 20px;
+  }
+}
+
+
+
+
+
 
 
 
